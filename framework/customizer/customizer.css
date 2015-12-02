@@ -1,0 +1,9 @@
+.accordion-section-content {padding-left:10px;padding-right:10px;}
+.customize-control .actions {margin-bottom:0}
+.customize-control .wp-picker-container a{margin-bottom:0}
+.customize-control {margin:7px 0; }
+.customize-control select {width:100%;box-sizing:border-box}
+
+.customize-control .customize-control-title {margin:10px 0 0;padding:15px 0 0;border-top:double #efefef;font-size:13px}
+.customize-control:first-child .customize-control-title {margin-top:0;padding-top:0;border:none}
+.customize-control-radio {padding:0}

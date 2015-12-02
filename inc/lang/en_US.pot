@@ -1,0 +1,1754 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-10 18:36+0300\n"
+"PO-Revision-Date: 2015-09-10 18:36+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: 404.php:7
+msgid "Page Not Found"
+msgstr ""
+
+#: 404.php:9
+msgid "It looks like nothing was found at this location."
+msgstr ""
+
+#: 404.php:18
+msgid ""
+"Oops. Something obviously isn't right if you're reading this. The page you "
+"are looking for does not exist; it may have been moved, or removed "
+"altogether. If you were looking for specific content, please try searching "
+"for it in the search box below."
+msgstr ""
+
+#: 404.php:22 loops/archive/loop-default.php:40
+msgid "Type Keyword & Hit Enter"
+msgstr ""
+
+#: archive-magazine.php:35 archive-magazine.php:72 archive-magazine.php:78
+#: archive-magazine.php:112 archive-magazine.php:145 archive-magazine.php:151
+#: archive-magazine.php:185 framework/functions/misc-functions.php:135
+#: loops/featured-slider-bigslider.php:20 loops/featured-slider-default.php:19
+#: loops/home-static-bottomposts.php:21 loops/home-static-bottomposts.php:27
+#: loops/home-static-bottomposts.php:63 loops/home-static-topposts.php:27
+#: loops/primarybottom-4col.php:34 loops/primarytop-left-firstrow.php:25
+#: loops/primarytop-left-firstrow.php:32 loops/primarytop-left-firstrow.php:65
+#: loops/primarytop-left-secondrow.php:28
+#: loops/primarytop-left-secondrow.php:34
+#: loops/primarytop-left-thirdrow.php:26 loops/primarytop-midcol.php:3
+#: loops/sidebar-tabbedposts.php:78 loops/archive/loop-default.php:6
+#: loops/archive/loop-grid.php:53 loops/archive/loop-media.php:65
+#: loops/archive/loop-media.php:96
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: archive-magazine.php:200
+msgid "MORE POSTS"
+msgstr ""
+
+#: attachment.php:30
+msgid "&laquo; Previous Image"
+msgstr ""
+
+#: attachment.php:30
+msgid "Back to Post"
+msgstr ""
+
+#: attachment.php:30
+msgid "Next Image &raquo;"
+msgstr ""
+
+#: comments.php:13
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:30
+#, php-format
+msgid "One Response to %2$s"
+msgid_plural "%1$s Responses to %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:37 comments.php:56
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:38 comments.php:57
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:65
+msgid "You must be logged in to post a comment"
+msgstr ""
+
+#: comments.php:67
+msgid "Login"
+msgstr ""
+
+#: comments.php:73
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:81
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:82
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:83
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:84
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:86
+msgid "Add your comment"
+msgstr ""
+
+#: comments.php:87
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:88
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: comments.php:89
+msgid "Your email address will not be published."
+msgstr ""
+
+#: comments.php:93
+msgid "Name"
+msgstr ""
+
+#: comments.php:95
+msgid "Email"
+msgstr ""
+
+#: comments.php:97
+msgid "Website"
+msgstr ""
+
+#: footer.php:183
+#, php-format
+msgid "Powered by %s"
+msgstr ""
+
+#: footer.php:185
+#, php-format
+msgid "Designed by %s"
+msgstr ""
+
+#: functions.php:64
+msgid "Masthead Navigation"
+msgstr ""
+
+#: functions.php:65
+msgid "Primary Navigation"
+msgstr ""
+
+#: functions.php:66
+msgid "Footer Navigation"
+msgstr ""
+
+#: functions.php:67
+msgid "Footer meta 1st column"
+msgstr ""
+
+#: functions.php:68
+msgid "Footer meta 2nd column"
+msgstr ""
+
+#: functions.php:69
+msgid "Footer meta 3rd column"
+msgstr ""
+
+#: functions.php:70
+msgid "Footer meta 4th column"
+msgstr ""
+
+#: functions.php:71
+msgid "Footer meta 5th column"
+msgstr ""
+
+#: functions.php:147
+msgid "Header ad zone, right hand of logo"
+msgstr ""
+
+#: functions.php:148
+msgid ""
+"Default Sidebar above slider - Sidebar for default homepage and innerpages"
+msgstr ""
+
+#: functions.php:149
+msgid ""
+"Default Sidebar below slider - Sidebar for default homepage and innerpages"
+msgstr ""
+
+#: functions.php:150
+msgid "Sidebar for big slider homepage template - above sidebar slider"
+msgstr ""
+
+#: functions.php:151
+msgid "Sidebar for big slider homepage template - below sidebar slider"
+msgstr ""
+
+#: functions.php:152
+msgid ""
+"Sidebar for no slider homepage and magazine style category template - above "
+"sidebar slider"
+msgstr ""
+
+#: functions.php:153
+msgid ""
+"Sidebar for no slider homepage and magazine style category template - below "
+"sidebar slider"
+msgstr ""
+
+#: functions.php:154
+msgid "728x90 banner zone above footer"
+msgstr ""
+
+#: functions.php:155
+msgid "400x90 banner zone above footer"
+msgstr ""
+
+#: functions.php:156
+msgid "Footer 1st column"
+msgstr ""
+
+#: functions.php:157
+msgid "Footer 2nd column"
+msgstr ""
+
+#: functions.php:158
+msgid "Footer 3rd column)"
+msgstr ""
+
+#: functions.php:159
+msgid "Footer 4th column)"
+msgstr ""
+
+#: functions.php:160
+msgid "Footer 1th column - second row"
+msgstr ""
+
+#: functions.php:161
+msgid "Footer 2nd column - second row"
+msgstr ""
+
+#: functions.php:162
+msgid "Footer 3rd column - second row"
+msgstr ""
+
+#: functions.php:163
+msgid "Footer 4th column - second row"
+msgstr ""
+
+#: functions.php:164
+msgid "Footer 5th column - second row"
+msgstr ""
+
+#: functions.php:165
+msgid "Widgets to show on WooCommerce archive pages"
+msgstr ""
+
+#: functions.php:166
+msgid "Archive Magazine and Homepage No Slider template - Left Sidebar"
+msgstr ""
+
+#: functions.php:167
+msgid "Below featured - mid column top"
+msgstr ""
+
+#: functions.php:168
+msgid "Below featured - mid column bottom"
+msgstr ""
+
+#: functions.php:169
+msgid "Below featured - Left column top"
+msgstr ""
+
+#: functions.php:170
+msgid "Below featured - Left column bottom"
+msgstr ""
+
+#: functions.php:171
+msgid "Single post page - below entry"
+msgstr ""
+
+#: functions.php:172
+msgid "Primary Bottom 1/4 column"
+msgstr ""
+
+#: functions.php:173
+msgid "Primary Bottom 2/4 column"
+msgstr ""
+
+#: functions.php:174
+msgid "Primary Bottom 3/4 column"
+msgstr ""
+
+#: functions.php:175
+msgid "Primary Bottom 4/4 column"
+msgstr ""
+
+#: header.php:38
+msgid "WooCommerce"
+msgstr ""
+
+#: header.php:40
+msgid "Cart"
+msgstr ""
+
+#: header.php:41
+msgid "Shop"
+msgstr ""
+
+#: header.php:42
+msgid "My Account"
+msgstr ""
+
+#: header.php:43
+msgid "Checkout"
+msgstr ""
+
+#: header.php:62 woocommerce/gabfire-woocommerce.php:107
+msgid "Facebook"
+msgstr ""
+
+#: header.php:62
+msgid "Friend on Facebook"
+msgstr ""
+
+#: header.php:68 woocommerce/gabfire-woocommerce.php:102
+msgid "Twitter"
+msgstr ""
+
+#: header.php:68
+msgid "Follow on Facebook"
+msgstr ""
+
+#: header.php:74 woocommerce/gabfire-woocommerce.php:112
+msgid "Google+"
+msgstr ""
+
+#: header.php:74
+msgid "Add to Google+ Circle"
+msgstr ""
+
+#: header.php:80
+msgid "LinkedIn"
+msgstr ""
+
+#: header.php:80
+msgid "Connect on Linked in"
+msgstr ""
+
+#: header.php:86 woocommerce/gabfire-woocommerce.php:117
+msgid "Pinterest"
+msgstr ""
+
+#: header.php:86
+msgid "Follow on Pinterest"
+msgstr ""
+
+#: header.php:92
+msgid "tumblr"
+msgstr ""
+
+#: header.php:92
+msgid "Follow on Tumblr"
+msgstr ""
+
+#: header.php:98
+msgid "Instagram"
+msgstr ""
+
+#: header.php:98
+msgid "Find on Instagram"
+msgstr ""
+
+#: header.php:104
+msgid "Vimeo"
+msgstr ""
+
+#: header.php:104
+msgid "Watch on Vimeo"
+msgstr ""
+
+#: header.php:110
+msgid "Youtube"
+msgstr ""
+
+#: header.php:110
+msgid "Watch on YouTube"
+msgstr ""
+
+#: header.php:116
+msgid "Subscribe by Email"
+msgstr ""
+
+#: header.php:121
+msgid "Site feed"
+msgstr ""
+
+#: header.php:122
+msgid "Subscribe to RSS"
+msgstr ""
+
+#: header.php:127 searchform.php:5
+msgid "Search"
+msgstr ""
+
+#: header.php:137
+msgid "Search in Site"
+msgstr ""
+
+#: header.php:142
+msgid "To search in site, type your keyword and hit enter"
+msgstr ""
+
+#: header.php:143
+msgid "Type keyword and hit enter"
+msgstr ""
+
+#: header.php:148
+msgid "Close"
+msgstr ""
+
+#: searchform.php:4
+msgid "Search in site..."
+msgstr ""
+
+#: framework/customizer/class-wp-customize-control.php:46
+#: framework/customizer/class-wp-customize-control.php:95
+#: framework/customizer/class-wp-customize-control.php:140
+#: framework/customizer/class-wp-customize-control.php:183
+#: framework/customizer/class-wp-customize-control.php:227
+#: framework/customizer/class-wp-customize-control.php:270
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: framework/customizer/customizer-framework.php:71
+msgid "Untitled Panel"
+msgstr ""
+
+#: framework/customizer/customizer-framework.php:89
+#: framework/customizer/customizer-framework.php:110
+msgid "Untitled Section"
+msgstr ""
+
+#: framework/functions/breadcrumb.php:7
+msgid "Home"
+msgstr ""
+
+#: framework/functions/breadcrumb.php:23 framework/functions/breadcrumb.php:35
+#: framework/functions/breadcrumb.php:42 framework/functions/breadcrumb.php:48
+msgid "Archives"
+msgstr ""
+
+#: framework/functions/breadcrumb.php:75
+msgid "Gallery"
+msgstr ""
+
+#: framework/functions/breadcrumb.php:97
+msgid "Search results for"
+msgstr ""
+
+#: framework/functions/breadcrumb.php:102
+msgid "Posts tagged with"
+msgstr ""
+
+#: framework/functions/breadcrumb.php:109
+#, php-format
+msgid "Entries posted by %1$s"
+msgstr ""
+
+#: framework/functions/breadcrumb.php:112
+msgid "404! Page not found"
+msgstr ""
+
+#: framework/functions/breadcrumb.php:116
+msgid " (Page"
+msgstr ""
+
+#: framework/functions/misc-functions.php:104
+#, php-format
+msgid "By %1$s on %2$s"
+msgstr ""
+
+#: framework/functions/misc-functions.php:113
+msgid "No Comment"
+msgstr ""
+
+#: framework/functions/misc-functions.php:113
+#: framework/functions/misc-functions.php:126 loops/archive/loop-media.php:108
+msgid "1 Comment"
+msgstr ""
+
+#: framework/functions/misc-functions.php:113
+msgid "% Comments"
+msgstr ""
+
+#: framework/functions/misc-functions.php:124 loops/archive/loop-media.php:106
+msgid "No Comments"
+msgstr ""
+
+#: framework/functions/misc-functions.php:125 loops/archive/loop-media.php:107
+msgid " Comments"
+msgstr ""
+
+#: framework/functions/misc-functions.php:135
+msgid "Read More"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:301
+msgid "Install Required Plugins"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:302
+msgid "Install Plugins"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:303
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:304
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:306
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:311
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:316
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:321
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:326
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:331
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:336
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:341
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:346
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:351
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:356
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:361
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:365
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:366
+msgid "Return to the dashboard"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:367
+#: framework/tgmpa/class-tgm-plugin-activation.php:2957
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:368
+#: framework/tgmpa/class-tgm-plugin-activation.php:2785
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:369
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:370
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:371
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:372
+msgid "Dismiss this notice"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:373
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:488
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:489
+msgid "Update Required"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:603
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:796
+#: framework/tgmpa/class-tgm-plugin-activation.php:3362
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:903
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:903
+#: framework/tgmpa/class-tgm-plugin-activation.php:906
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:906
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:1084
+#: framework/tgmpa/class-tgm-plugin-activation.php:2781
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:1849
+#, php-format
+msgctxt "%s = version number"
+msgid "TGMPA v%s"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2120
+msgid "Required"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2123
+msgid "Recommended"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2139
+msgid "WordPress Repository"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2142
+msgid "External Source"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2145
+msgid "Pre-Packaged"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2162
+msgid "Not Installed"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2166
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2168
+msgid "Active"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2174
+msgid "Required Update not Available"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2177
+msgid "Requires Update"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2180
+msgid "Update recommended"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2188
+#, php-format
+msgctxt "%1$s = install status, %2$s = update status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2233
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2236
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2239
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2242
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2324
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2332
+msgid "Installed version:"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2340
+msgid "Minimum required version:"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2352
+msgid "Available version:"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2375
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2389
+msgid "Plugin"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2390
+msgid "Source"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2391
+msgid "Type"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2395
+msgid "Version"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2396
+msgid "Status"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2444
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Install %2$s"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2448
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Update %2$s"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2453
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Activate %2$s"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2523
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2556
+msgid "Install"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2562
+msgid "Update"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2565
+msgid "Activate"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2596
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2598
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2634
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2636
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2741
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2767
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:2956
+msgid "Plugin activation failed."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:3286
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:3288
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:3289
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:3293
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:3294
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:3294
+#: framework/tgmpa/class-tgm-plugin-activation.php:3300
+#: woocommerce/loop/add-to-cart.php:34
+msgid "Show Details"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:3294
+#: framework/tgmpa/class-tgm-plugin-activation.php:3300
+msgid "Hide Details"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:3295
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:3296
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:3299
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:3300
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:3301
+msgid "All installations have been completed."
+msgstr ""
+
+#: framework/tgmpa/class-tgm-plugin-activation.php:3302
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/customizer-options.php:14 inc/customizer-options.php:428
+msgid "Category Based"
+msgstr ""
+
+#: inc/customizer-options.php:15 inc/customizer-options.php:429
+msgid "Custom Field"
+msgstr ""
+
+#: inc/customizer-options.php:16 inc/customizer-options.php:430
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/customizer-options.php:17 inc/customizer-options.php:20
+#: inc/customizer-options.php:431
+msgid "Tag Based"
+msgstr ""
+
+#: inc/customizer-options.php:19
+msgid "Disable"
+msgstr ""
+
+#: inc/customizer-options.php:21
+msgid "Site Wide"
+msgstr ""
+
+#: inc/customizer-options.php:42
+msgid "Homepage"
+msgstr ""
+
+#: inc/customizer-options.php:49
+msgid "Miscellaneous"
+msgstr ""
+
+#: inc/customizer-options.php:54
+msgid "Custom Styling"
+msgstr ""
+
+#: inc/customizer-options.php:63
+msgid "Site Identity"
+msgstr ""
+
+#: inc/customizer-options.php:71
+msgid "Colored Nav Items"
+msgstr ""
+
+#: inc/customizer-options.php:79
+msgid "Front Page Template"
+msgstr ""
+
+#: inc/customizer-options.php:84 inc/customizer-options.php:808
+msgid "Featured Slider"
+msgstr ""
+
+#: inc/customizer-options.php:89
+msgid "Primary Top"
+msgstr ""
+
+#: inc/customizer-options.php:94
+msgid "Sidebar"
+msgstr ""
+
+#: inc/customizer-options.php:99
+msgid "Subnews"
+msgstr ""
+
+#: inc/customizer-options.php:105
+msgid "Social"
+msgstr ""
+
+#: inc/customizer-options.php:111
+msgid "Sliders"
+msgstr ""
+
+#: inc/customizer-options.php:116 inc/customizer-options.php:977
+msgid "Category Templates"
+msgstr ""
+
+#: inc/customizer-options.php:121 inc/customizer-options.php:126
+msgid "Other Settings"
+msgstr ""
+
+#: inc/customizer-options.php:132 inc/customizer-options.php:1088
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer-options.php:137
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer-options.php:142
+msgid "Background Image"
+msgstr ""
+
+#: inc/customizer-options.php:147
+msgid "Customize Colors"
+msgstr ""
+
+#: inc/customizer-options.php:155
+msgid "Logo Type"
+msgstr ""
+
+#: inc/customizer-options.php:156
+msgid ""
+"If this option is set as Text Logo, make sure the Site Title and Taglines "
+"are entered below"
+msgstr ""
+
+#: inc/customizer-options.php:164
+msgid "Text Logo"
+msgstr ""
+
+#: inc/customizer-options.php:165
+msgid "Image Logo"
+msgstr ""
+
+#: inc/customizer-options.php:169
+msgid "Custom Logo"
+msgstr ""
+
+#: inc/customizer-options.php:170
+msgid ""
+"If image-based logo is selected, upload a logo for your theme. If text based "
+"logo is selected, define Site Title and Tagline below."
+msgstr ""
+
+#: inc/customizer-options.php:179
+msgid "Display Logo on Footer"
+msgstr ""
+
+#: inc/customizer-options.php:180
+msgid "Check this box to display logo before footer navigation"
+msgstr ""
+
+#: inc/customizer-options.php:188
+msgid "Logo Margin Top"
+msgstr ""
+
+#: inc/customizer-options.php:189
+msgid "Set a Margin value between logo and top line"
+msgstr ""
+
+#: inc/customizer-options.php:197
+msgid "Logo Margin Bottom"
+msgstr ""
+
+#: inc/customizer-options.php:198
+msgid "Set a Margin value between logo and bottom line"
+msgstr ""
+
+#: inc/customizer-options.php:206
+msgid "Logo Margin Left"
+msgstr ""
+
+#: inc/customizer-options.php:207
+msgid "Set a Margin value between logo and left line"
+msgstr ""
+
+#: inc/customizer-options.php:218
+msgid "Colored Navigation"
+msgstr ""
+
+#: inc/customizer-options.php:219
+msgid ""
+"Number of colored navigation items to display on both header and footer navs"
+msgstr ""
+
+#: inc/customizer-options.php:228
+msgid "Link #1"
+msgstr ""
+
+#: inc/customizer-options.php:229 inc/customizer-options.php:247
+#: inc/customizer-options.php:265 inc/customizer-options.php:283
+#: inc/customizer-options.php:301 inc/customizer-options.php:319
+#: inc/customizer-options.php:337 inc/customizer-options.php:355
+#: inc/customizer-options.php:373 inc/customizer-options.php:391
+#: inc/customizer-options.php:464 inc/customizer-options.php:500
+#: inc/customizer-options.php:527 inc/customizer-options.php:545
+#: inc/customizer-options.php:563 inc/customizer-options.php:581
+#: inc/customizer-options.php:626 inc/customizer-options.php:644
+#: inc/customizer-options.php:662 inc/customizer-options.php:680
+#: inc/customizer-options.php:698 inc/customizer-options.php:725
+#: inc/customizer-options.php:752 inc/customizer-options.php:779
+msgid "Select a category"
+msgstr ""
+
+#: inc/customizer-options.php:238 inc/customizer-options.php:256
+#: inc/customizer-options.php:274 inc/customizer-options.php:292
+#: inc/customizer-options.php:310 inc/customizer-options.php:328
+#: inc/customizer-options.php:346 inc/customizer-options.php:364
+#: inc/customizer-options.php:382 inc/customizer-options.php:400
+#: inc/customizer-options.php:409
+msgid "Select a color"
+msgstr ""
+
+#: inc/customizer-options.php:246
+msgid "Link #2"
+msgstr ""
+
+#: inc/customizer-options.php:264
+msgid "Link #3"
+msgstr ""
+
+#: inc/customizer-options.php:282
+msgid "Link #4"
+msgstr ""
+
+#: inc/customizer-options.php:300
+msgid "Link #5"
+msgstr ""
+
+#: inc/customizer-options.php:318
+msgid "Link #6"
+msgstr ""
+
+#: inc/customizer-options.php:336
+msgid "Link #7"
+msgstr ""
+
+#: inc/customizer-options.php:354
+msgid "Link #8"
+msgstr ""
+
+#: inc/customizer-options.php:372
+msgid "Link #9"
+msgstr ""
+
+#: inc/customizer-options.php:390
+msgid "Link #10"
+msgstr ""
+
+#: inc/customizer-options.php:408
+msgid "Hovered Link Background Color"
+msgstr ""
+
+#: inc/customizer-options.php:420
+msgid "Featured slider"
+msgstr ""
+
+#: inc/customizer-options.php:421
+msgid ""
+"Select a base query type to determine how this content area is populated. If "
+"base query type is Category or Tag-based, please identify the category or "
+"tag below. If it is Custom Field, posts which are marked as featured "
+"(checkbox labeled as \"Is Featured\" on \"Add/Edit Post\" screen) will be "
+"fetched while \"Recent Posts\" option is going to display most recent posts "
+"across all categories on featured slider."
+msgstr ""
+
+#: inc/customizer-options.php:436
+msgid "If Category Based: Select a category"
+msgstr ""
+
+#: inc/customizer-options.php:445
+msgid "If Tag Based: Select a tag"
+msgstr ""
+
+#: inc/customizer-options.php:454 inc/customizer-options.php:473
+#: inc/customizer-options.php:509 inc/customizer-options.php:536
+#: inc/customizer-options.php:554 inc/customizer-options.php:572
+#: inc/customizer-options.php:590 inc/customizer-options.php:635
+#: inc/customizer-options.php:653 inc/customizer-options.php:671
+#: inc/customizer-options.php:689 inc/customizer-options.php:707
+#: inc/customizer-options.php:734 inc/customizer-options.php:761
+#: inc/customizer-options.php:788
+msgid "Number of entries"
+msgstr ""
+
+#: inc/customizer-options.php:463
+msgid "Primary Top First Row"
+msgstr ""
+
+#: inc/customizer-options.php:482
+msgid "Custom caption instead of large cat name"
+msgstr ""
+
+#: inc/customizer-options.php:491
+msgid "Custom caption instead of small cat name"
+msgstr ""
+
+#: inc/customizer-options.php:499
+msgid "Primary Top Second Row"
+msgstr ""
+
+#: inc/customizer-options.php:518 inc/customizer-options.php:599
+#: inc/customizer-options.php:716 inc/customizer-options.php:743
+#: inc/customizer-options.php:770 inc/customizer-options.php:797
+msgid "Use a custom caption instead of cat name"
+msgstr ""
+
+#: inc/customizer-options.php:526
+msgid "Primary Top Third Row - Left"
+msgstr ""
+
+#: inc/customizer-options.php:544
+msgid "Primary Top Third Row - Mid"
+msgstr ""
+
+#: inc/customizer-options.php:562
+msgid "Primary Top Third Row - Right"
+msgstr ""
+
+#: inc/customizer-options.php:580
+msgid "Right Narrow Col Below Slider"
+msgstr ""
+
+#: inc/customizer-options.php:608
+msgid "Use an image instead of text caption"
+msgstr ""
+
+#: inc/customizer-options.php:616
+msgid "Custom Title"
+msgstr ""
+
+#: inc/customizer-options.php:617
+msgid "Use a custom caption above sidebar tabs"
+msgstr ""
+
+#: inc/customizer-options.php:625
+msgid "Sidebar Tabbed Slider #1"
+msgstr ""
+
+#: inc/customizer-options.php:643
+msgid "Sidebar Tabbed Slider #2"
+msgstr ""
+
+#: inc/customizer-options.php:661
+msgid "Sidebar Tabbed Slider #3"
+msgstr ""
+
+#: inc/customizer-options.php:679
+msgid "Sidebar Tabbed Slider #4"
+msgstr ""
+
+#: inc/customizer-options.php:697
+msgid "Subnews #1"
+msgstr ""
+
+#: inc/customizer-options.php:724
+msgid "Subnews #2"
+msgstr ""
+
+#: inc/customizer-options.php:751
+msgid "Subnews #3"
+msgstr ""
+
+#: inc/customizer-options.php:778
+msgid "Subnews #4"
+msgstr ""
+
+#: inc/customizer-options.php:809 inc/customizer-options.php:818
+#: inc/customizer-options.php:827 inc/customizer-options.php:854
+msgid ""
+"Auto rotation speed. Slide to next slide in X seconds (Select 0 to disable "
+"auto rotation)"
+msgstr ""
+
+#: inc/customizer-options.php:817
+msgid "Media Category Slider"
+msgstr ""
+
+#: inc/customizer-options.php:826
+msgid "Sidebar Category Slider"
+msgstr ""
+
+#: inc/customizer-options.php:835
+msgid "Post Gallery"
+msgstr ""
+
+#: inc/customizer-options.php:836
+msgid ""
+"Automatically create a slideshow of uploaded photos in post entries to be "
+"displayed below post title. [Note: Inner-Page options include a) displaying "
+"slider site-wide b) tag-based c) or to disable completely]."
+msgstr ""
+
+#: inc/customizer-options.php:844
+msgid "Post Gallery: If Tag Based"
+msgstr ""
+
+#: inc/customizer-options.php:845
+msgid ""
+"If tag-based option is selected, display posts assigned this tag to be shown "
+"in inner-page slider. (Note: Posts with multiple image attachments and "
+"assigned this tag will display an inner-page slider)."
+msgstr ""
+
+#: inc/customizer-options.php:853
+msgid "Post Gallery: Auto Rotation Speed"
+msgstr ""
+
+#: inc/customizer-options.php:866
+msgid "Header - Social Items"
+msgstr ""
+
+#: inc/customizer-options.php:867
+msgid "Display social icons on masthead"
+msgstr ""
+
+#: inc/customizer-options.php:875
+msgid "Link To Social Sites"
+msgstr ""
+
+#: inc/customizer-options.php:876
+msgid "Facebook Account Link"
+msgstr ""
+
+#: inc/customizer-options.php:885
+msgid "Twitter Account Link"
+msgstr ""
+
+#: inc/customizer-options.php:894
+msgid "Google Plus Account Link"
+msgstr ""
+
+#: inc/customizer-options.php:903
+msgid "LinkedIn Account Link"
+msgstr ""
+
+#: inc/customizer-options.php:912
+msgid "Pinterest Account Link"
+msgstr ""
+
+#: inc/customizer-options.php:921
+msgid "Tumblr Account Link"
+msgstr ""
+
+#: inc/customizer-options.php:930
+msgid "Instagram Account Link"
+msgstr ""
+
+#: inc/customizer-options.php:939
+msgid "Vimeo Account Link"
+msgstr ""
+
+#: inc/customizer-options.php:948
+msgid "Youtube Account Link"
+msgstr ""
+
+#: inc/customizer-options.php:957
+msgid "Display a link to site feeds on masthead navigation"
+msgstr ""
+
+#: inc/customizer-options.php:966
+msgid "Link to subscribe RSS via Email"
+msgstr ""
+
+#: inc/customizer-options.php:978
+msgid ""
+"2 column cat template. Separate with comma if more than 1 category entered. "
+"(ex: 1,5,99)"
+msgstr ""
+
+#: inc/customizer-options.php:987
+msgid "3 column category template IDs."
+msgstr ""
+
+#: inc/customizer-options.php:996
+msgid "4 column category template."
+msgstr ""
+
+#: inc/customizer-options.php:1005
+msgid "2 column no sidebar category template IDs."
+msgstr ""
+
+#: inc/customizer-options.php:1014
+msgid "3 column cat  no sidebar template IDs."
+msgstr ""
+
+#: inc/customizer-options.php:1023
+msgid "4 column no sidebar cat template."
+msgstr ""
+
+#: inc/customizer-options.php:1032
+msgid "Media category template."
+msgstr ""
+
+#: inc/customizer-options.php:1041
+msgid "Magazine category layout."
+msgstr ""
+
+#: inc/customizer-options.php:1049
+msgid "RSS Feed Burner"
+msgstr ""
+
+#: inc/customizer-options.php:1050
+msgid "Link to a third party feed handler"
+msgstr ""
+
+#: inc/customizer-options.php:1058
+msgid "Do not duplicate posts"
+msgstr ""
+
+#: inc/customizer-options.php:1059
+msgid ""
+"Regardless of category selections, do not duplicate posts on homepage. This "
+"prevents the same post from appearing in multiple sections (good for SEO)"
+msgstr ""
+
+#: inc/customizer-options.php:1067
+msgid "Featured Image Post Display"
+msgstr ""
+
+#: inc/customizer-options.php:1068
+msgid "Auto resize and display featured image on single post - above entry"
+msgstr ""
+
+#: inc/customizer-options.php:1076
+msgid "Widget Map"
+msgstr ""
+
+#: inc/customizer-options.php:1077
+msgid ""
+"Display the location of widgets on front page. After reviewing widget "
+"locations be sure to disable this option."
+msgstr ""
+
+#: inc/customizer-options.php:1089
+msgid ""
+"Quickly add some CSS to your theme by adding it to this block. To use a "
+"solid background color for the body of site, paste body{background-image:"
+"none} below and then set the background color on next option."
+msgstr ""
+
+#: inc/customizer-options.php:1100
+msgid "Customize Fonts and/or Colors"
+msgstr ""
+
+#: inc/customizer-options.php:1101
+msgid "This is a master trigger to enable/disable all custom styles."
+msgstr ""
+
+#: inc/customizer-options.php:1109
+msgid "4 vertical column below gallery"
+msgstr ""
+
+#: inc/customizer-options.php:1110
+msgid "Select a color for col #1"
+msgstr ""
+
+#: inc/customizer-options.php:1119
+msgid "Select a color for col #2"
+msgstr ""
+
+#: inc/customizer-options.php:1128
+msgid "Select a color for col #3"
+msgstr ""
+
+#: inc/customizer-options.php:1137
+msgid "Select a color for col #4"
+msgstr ""
+
+#: inc/customizer-options.php:1145
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer-options.php:1146
+msgid "Change body font style of sitebody."
+msgstr ""
+
+#: inc/customizer-options.php:1154
+msgid "Body Font"
+msgstr ""
+
+#: inc/customizer-options.php:1155
+msgid "Font size (px)"
+msgstr ""
+
+#: inc/customizer-options.php:1165
+msgid "Font Family"
+msgstr ""
+
+#: inc/customizer-options.php:1175
+msgid "Font Color"
+msgstr ""
+
+#: inc/customizer-options.php:1183
+msgid "Primary Color"
+msgstr ""
+
+#: inc/customizer-options.php:1184
+msgid "Change the primary color of site"
+msgstr ""
+
+#: inc/customizer-options.php:1193
+msgid "Change the pinkish red with another color"
+msgstr ""
+
+#: inc/theme-custom-fields.php:37
+msgid "Post Entrance"
+msgstr ""
+
+#: inc/theme-custom-fields.php:40
+msgid ""
+"Enter a paragraph of text to display with a larger font size above entry."
+msgstr ""
+
+#: inc/theme-custom-fields.php:47
+msgid "Video URL"
+msgstr ""
+
+#: inc/theme-custom-fields.php:49
+msgid ""
+"You can add any Youtube, Vimeo, Dailymotion or Screenr video url into this "
+"box"
+msgstr ""
+
+#: inc/theme-custom-fields.php:56
+msgid "Post Page Layout?"
+msgstr ""
+
+#: inc/theme-custom-fields.php:58
+msgid ""
+"Select a Post layout</br><strong>Note:</strong> Select Big Picture only if "
+"you have uploaded more than 1 photo"
+msgstr ""
+
+#: inc/theme-custom-fields.php:62
+msgid "Default"
+msgstr ""
+
+#: inc/theme-custom-fields.php:63
+msgid "Big Picture"
+msgstr ""
+
+#: inc/theme-custom-fields.php:64
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/theme-custom-fields.php:65
+msgid "No Sidebar"
+msgstr ""
+
+#: inc/theme-custom-fields.php:71
+msgid "Source Name"
+msgstr ""
+
+#: inc/theme-custom-fields.php:73
+msgid "The name of the website that you want to credit for this entry"
+msgstr ""
+
+#: inc/theme-custom-fields.php:79
+msgid "Source Link"
+msgstr ""
+
+#: inc/theme-custom-fields.php:81
+msgid "Enter a link to redirect source name"
+msgstr ""
+
+#: inc/theme-custom-fields.php:87
+msgid "Is Featured?"
+msgstr ""
+
+#: inc/theme-custom-fields.php:89
+msgid ""
+"Check this box to display this post on featured section of front page.</"
+"br><strong>Note:</strong> This will only work if Custom Field option is "
+"enabled within Theme Options."
+msgstr ""
+
+#: inc/theme-custom-fields.php:95
+msgid "Disable Featured Image on this post?"
+msgstr ""
+
+#: inc/theme-custom-fields.php:97
+msgid ""
+"If you have enabled featured post on single post page option, the featured "
+"image shows at top of every post automatically. You may check this box to "
+"disable that image for certain posts."
+msgstr ""
+
+#: inc/theme-custom-fields.php:103
+msgid "Disable innerpage slider for this post"
+msgstr ""
+
+#: inc/theme-custom-fields.php:105
+msgid ""
+"If you have enabled innerpage slider sitewide, but specifically want to "
+"disable it for this post, check this box."
+msgstr ""
+
+#: inc/theme-functions.php:34
+#, php-format
+msgid "Search results for %1$s"
+msgstr ""
+
+#: inc/theme-functions.php:341
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/theme-functions.php:356
+msgid "Pingback:"
+msgstr ""
+
+#: inc/theme-functions.php:356
+msgid "Edit"
+msgstr ""
+
+#: inc/theme-functions.php:484
+msgid "<strong>Pages:</strong>"
+msgstr ""
+
+#: inc/theme-functions.php:489
+msgid "Next page"
+msgstr ""
+
+#: inc/theme-functions.php:490
+msgid "Previous page"
+msgstr ""
+
+#: inc/theme-functions.php:515
+msgid "SOURCE"
+msgstr ""
+
+#: inc/theme-functions.php:561
+#, php-format
+msgid "%1$s added by %2$s on %3$s"
+msgstr ""
+
+#: inc/theme-functions.php:563
+#, php-format
+msgid "View all posts by %s &rarr;"
+msgstr ""
+
+#: loops/primarytop-left-firstrow.php:33
+#: loops/primarytop-left-secondrow.php:35
+msgid "CONTINUE READING"
+msgstr ""
+
+#: loops/primarytop-left-firstrow.php:71
+msgid "View All"
+msgstr ""
+
+#: loops/archive/loop-default.php:33
+msgid "Nothing Found"
+msgstr ""
+
+#: loops/archive/loop-default.php:35
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: loops/archive/loop-media.php:73
+#, php-format
+msgid "MORE ON %s"
+msgstr ""
+
+#: woocommerce/gabfire-woocommerce.php:66
+msgctxt "breadcrumb"
+msgid "Home"
+msgstr ""
+
+#: woocommerce/gabfire-woocommerce.php:159
+msgid "Out of Stock"
+msgstr ""
+
+#: woocommerce/gabfire-woocommerce.php:170
+msgid "Continue Shopping"
+msgstr ""
+
+#: woocommerce/gabfire-woocommerce.php:171
+msgid "View Cart"
+msgstr ""
+
+#: woocommerce/gabfire-woocommerce.php:171
+msgid "Product successfully added to your cart."
+msgstr ""

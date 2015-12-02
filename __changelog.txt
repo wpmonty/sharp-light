@@ -1,0 +1,88 @@
+-> sharp 0.92
+------------------------------------------
+	- Hide all sidebar panels when posts number set 0
+	- Fix do not duplicate posts for sidebar
+		-- sidebar.php
+
+-> sharp 0.91
+------------------------------------------
+	- Do Not Duplicate posts fix
+		-- inc/customizer-options.php
+		
+-> sharp 0.9
+------------------------------------------
+	- Complete theme rewrite
+		-- all files
+		
+-> sharp 0.8
+------------------------------------------
+	- WooCommerce Support
+	- Framework Update
+		-- Almost all files has been re-written. 
+		   Delete the old theme and install new version instead.
+
+-> sharp 0.7
+------------------------------------------
+- Add Instagram Icon to Masthead
+	-- options.php
+	-- header.php]]
+- Fix leftsidebar responsive layout to move sidebar below entrysource	
+	- sidebar.php
+	- single-leftsidebar.php
+
+-> sharp 0.61
+------------------------------------------
+	- Colored Nav Custom Colores, footer fix
+		-- footer.php
+	- Add Source as Option into Gabfire Custom Fields
+		-- functions.php
+		-- single-default.php
+		-- single-bigpicture.php
+		-- single-leftsidebar.php
+		-- single-fullwidth.php
+		-- style.css (changing style.css might reset theme settings. You can alternatively
+		   just paste the code below into custom.css)
+		   .entrysource {font:12px 'Open Sans', Arial, sans-serif;color:#888;}
+		
+-> sharp 0.6
+------------------------------------------
+	- Add tumblr icon to site header
+		-- header.php
+		-- options.php
+
+-> sharp 0.5
+------------------------------------------
+	- Fix "Leave a comment" option
+		-- comments.php
+
+-> sharp 0.4
+------------------------------------------
+	- Social link icons fix
+		-- header.php
+	- Gabfire Widget Pack - Posts Tabs issue fix
+		-- functions.php
+
+-> sharp 0.3
+------------------------------------------
+	- Framework update
+		-- functions.php
+		-- header.php
+	- Custom colors fix
+		-- css/customizedcss.php
+	- Subscribe by email - link fix
+		-- header.php
+		
+-> sharp 0.2
+------------------------------------------
+	- Added option to remove footer logo
+		-- options.php
+		-- home.php
+	- Added footer custom navigations
+		-- footer.php
+	- Fixed caption size in posts
+		-- style.css
+		-- be careful while updating style.css file as in some cases, style.css update causes theme control panel reset. You can avoid to update style.css file by simply adding the codes below into custom css box on theme control panel.
+
+-> sharp 0.1
+------------------------------------------
+   - Initial release
