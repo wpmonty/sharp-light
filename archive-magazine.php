@@ -46,7 +46,7 @@ if ((!is_paged()) and ($count < 4)) { ?>
 	<section class="row archive-mag-bottom">
 		<div class="col-xs-12 col-md-8 archive-withsidebar">		
 			<div class="row">
-				<div class="col-md-3 mag-leftsidebar"><?php gabfire_dynamic_sidebar('archive-mag-left'); ?></div>
+				<div class="col-md-3 mag-leftsidebar"><?php sharp_dynamic_sidebar('archive-mag-left'); ?></div>
 				<div class="col-md-9"><?php } ?>
 <?php } ?>
 					

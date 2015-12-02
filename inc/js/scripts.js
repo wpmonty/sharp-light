@@ -19,7 +19,6 @@
 						}
 					);
 
-/*
 					$('.gabfire_innerslider').owlCarousel({
 						loop				: true,
 						nav					: true,
@@ -34,7 +33,6 @@
 						autoplay			: false,
 						autoHeight			: true
 					});
-*/
 
 					$('#tabs-left').tab();
 					$('#tabs > li > a').hover( function(){$(this).tab('show');});
@@ -47,8 +45,6 @@
 						label: ''
 					});
 					$(".tinynav").selectbox();
-					$("ul.tabs").tabs("div.panes > div");
-					$("ul.sc_tabs").tabs("div.sc_tabs-content > div");
 					$('.tooltip-link').tooltip({ placement: 'top'});
 
 					//portfolio - show link

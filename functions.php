@@ -9,11 +9,6 @@
 	get_template_part( 'inc/theme-custom-fields');
 	get_template_part( 'inc/theme-functions');
 
-	/* If plugin is activated, include woocommerce functions */
-	if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
-		get_template_part( 'woocommerce/gabfire-woocommerce');
-	}
-
 	/**
 	 * Setup Theme.
 	 *
@@ -24,9 +19,9 @@
 	 * as indicating support post thumbnails.
 	 *
 	 */
-	if ( ! function_exists( 'gabfire_theme_setup' ) ) {
+	if ( ! function_exists( 'sharp_theme_setup' ) ) {
 
-		function gabfire_theme_setup() {
+		function sharp_theme_setup() {
 			/*
 			 * Make theme ready for translation
 			 * Translations can be added to the /inc/lang/ directory.
@@ -47,11 +42,6 @@
 				'masthead' => __('Masthead Navigation', 'gabfire'),
 				'primary' => __('Primary Navigation', 'gabfire'),
 				'footer' => __('Footer Navigation', 'gabfire'),
-				'footermeta-1' => __('Footer meta 1st column', 'gabfire'),
-				'footermeta-2' => __('Footer meta 2nd column', 'gabfire'),
-				'footermeta-3' => __('Footer meta 3rd column', 'gabfire'),
-				'footermeta-4' => __('Footer meta 4th column', 'gabfire'),
-				'footermeta-5' => __('Footer meta 5th column', 'gabfire')
 			));
 
 			/*
@@ -72,26 +62,26 @@
 			) ) );
 		}
 
-		add_action( 'after_setup_theme', 'gabfire_theme_setup' );
+		add_action( 'after_setup_theme', 'sharp_theme_setup' );
 	}
-	// gabfire_theme_setup
+	// sharp_theme_setup
 
 /* ********************
  * Load theme styles and custom scripts
  ******************************************************************** */
-	 if ( ! function_exists( 'gabfire_theme_scripts' ) ) {
-		function gabfire_theme_scripts() {
+	 if ( ! function_exists( 'sharp_theme_scripts' ) ) {
+		function sharp_theme_scripts() {
 				wp_enqueue_style('bootstrap', get_template_directory_uri() .'/framework/bootstrap/css/bootstrap.min.css');
 				wp_enqueue_style('font-awesome', get_template_directory_uri() .'/framework/font-awesome/css/font-awesome.min.css');
 				wp_enqueue_style('owl-carousel2', get_template_directory_uri() .'/css/owl-carousel.css');
-				wp_enqueue_style('gabfire-style', get_stylesheet_uri(), array( 'bootstrap','font-awesome','owl-carousel2' ));
+				wp_enqueue_style('sharp-style', get_stylesheet_uri(), array( 'bootstrap','font-awesome','owl-carousel2' ));
 				wp_enqueue_style('bootstrap-social', get_template_directory_uri() .'/css/bootstrap-social.css');
 
 				wp_enqueue_script( 'jquery', array(), '', true);
 				wp_enqueue_script('owl-carousel2', get_template_directory_uri() .'/inc/js/owl.carousel.min.js', array(), '', true);
 				wp_enqueue_script('bootstrap', get_template_directory_uri() .'/framework/bootstrap/js/bootstrap.min.js', array(), '', true);
 				wp_enqueue_script('responsive-menu', get_template_directory_uri() .'/inc/js/responsive-menu.js', array(), '', true);
-				wp_enqueue_script('gabfire-scripts', get_template_directory_uri() .'/inc/js/scripts.js', array(), '', true);
+				wp_enqueue_script('sharp-scripts', get_template_directory_uri() .'/inc/js/scripts.js', array(), '', true);
 
 				if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 					wp_enqueue_script( 'comment-reply' );
@@ -108,14 +98,14 @@
 				}
 			}
 
-		add_action( 'wp_enqueue_scripts', 'gabfire_theme_scripts' );
+		add_action( 'wp_enqueue_scripts', 'sharp_theme_scripts' );
 	}
 
 /* ********************
  * Widgetize theme
  ******************************************************************** */
-	if ( !function_exists( 'gabfire_register_sidebar' ) ) {
-		function gabfire_register_sidebar($args) {
+	if ( !function_exists( 'sharp_register_sidebar' ) ) {
+		function sharp_register_sidebar($args) {
 			$common = array(
 				'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widgetinner">',
 				'after_widget'  => "</div></section>\n",
@@ -126,46 +116,49 @@
 			return register_sidebar($args);
 		}
 
-		function gabfire_widgets_init() {
-			gabfire_register_sidebar(array('name' => 'Header - 728x90','id' => 'header-ad','description' => __('Header ad zone, right hand of logo', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Sidebar Default, Top - 336px','id' => 'sidebar-1','description' => __('Default Sidebar above slider - Sidebar for default homepage and innerpages', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Sidebar Default, Bottom - 336px','id' => 'sidebar-2', 'description' => __('Default Sidebar below slider - Sidebar for default homepage and innerpages', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Sidebar BigSlider Templ, Top - 336px','id' => 'sidebar-3','description' => __('Sidebar for big slider homepage template - above sidebar slider', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Sidebar BigSlider Templ, Bottom - 336px','id' => 'sidebar-4','description' => __('Sidebar for big slider homepage template - below sidebar slider', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Sidebar NoSlider Templ, Top - 336px','id' => 'sidebar-5','description' => __('Sidebar for no slider homepage and magazine style category template - above sidebar slider', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Sidebar NoSlider Templ, Bottom - 336px','id' => 'sidebar-6','description' => __('Sidebar for no slider homepage and magazine style category template - below sidebar slider', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Footer Left Banner - 728x90','id' => 'body728xany_left','description' => __('728x90 banner zone above footer', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Footer Right Banner - 400x90','id' => 'body728xany_right','description' => __('400x90 banner zone above footer', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Footer 1','id' => 'footer-1','description' => __('Footer 1st column', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Footer 2','id' => 'footer-2','description' => __('Footer 2nd column', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Footer 3','id' => 'footer-3','description' => __('Footer 3rd column)', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Footer 4','id' => 'footer-4','description' => __('Footer 4th column)', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Footer 5','id' => 'footer-5','description' => __('Footer 1th column - second row', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Footer 6','id' => 'footer-6','description' => __('Footer 2nd column - second row', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Footer 7','id' => 'footer-7','description' => __('Footer 3rd column - second row', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Footer 8','id' => 'footer-8','description' => __('Footer 4th column - second row', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Footer 9','id' => 'footer-9','description' => __('Footer 5th column - second row', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Shop','id' => 'shop','description' => __('Widgets to show on WooCommerce archive pages', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Mag Category - Left','id' => 'archive-mag-left','description' => __('Archive Magazine and Homepage No Slider template - Left Sidebar', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Primary Mid Top','id' => 'primary-mid-top','description' => __('Below featured - mid column top', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Primary Mid Bottom','id' => 'primary-right-bottom','description' => __('Below featured - mid column bottom', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Primary Left Top','id' => 'primary-left-top','description' => __('Below featured - Left column top', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Primary Left Bottom','id' => 'primary-left-bottom','description' => __('Below featured - Left column bottom', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'PostWidget','id' => 'PostWidget','description' => __('Single post page - below entry', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Primary Bottom 1','id' => 'primarybottom-1','description' => __('Primary Bottom 1/4 column', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Primary Bottom 2','id' => 'primarybottom-2','description' => __('Primary Bottom 2/4 column', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Primary Bottom 3','id' => 'primarybottom-3','description' => __('Primary Bottom 3/4 column', 'gabfire')));
-			gabfire_register_sidebar(array('name' => 'Primary Bottom 4','id' => 'primarybottom-4','description' => __('Primary Bottom 4/4 column', 'gabfire')));
+		function sharp_widgets_init() {
+			sharp_register_sidebar(array('name' => 'Inner Header - 728x90','id' => 'header-ad','description' => __('Header ad zone, right hand of logo, 728x90 only', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Below Header','id' => 'header-ad-below','description' => __('Header ad zone, below primary menu', 'gabfire')));
+
+			sharp_register_sidebar(array('name' => 'Home Middle Fullwidth','id' => 'home-middle','description' => __('Homepage, underneath featured posts', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Home Right Sidebar','id' => 'home-right-sidebar','description' => __('Homepage, right sidebar', 'gabfire')));
+
+			sharp_register_sidebar(array('name' => 'Sidebar Default, Top - 336px','id' => 'default-sidebar','description' => __('Default Sidebar above slider - Sidebar for default homepage and innerpages', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Home 2 Column Top','id' => 'home-left-top','description' => __('Homepage, underneath 2 column posts, left of sidebar', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Home 2 Column Bottom','id' => 'home-left-bottom','description' => __('Homepage, underneath 2 column posts, left of sidebar', 'gabfire')));
+
+
+			sharp_register_sidebar(array('name' => 'Footer Left Banner - 728x90','id' => 'body728xany_left','description' => __('728x90 banner zone above footer', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Footer Right Banner - 400x90','id' => 'body728xany_right','description' => __('400x90 banner zone above footer', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Footer 1','id' => 'footer-1','description' => __('Footer 1st column', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Footer 2','id' => 'footer-2','description' => __('Footer 2nd column', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Footer 3','id' => 'footer-3','description' => __('Footer 3rd column)', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Footer 4','id' => 'footer-4','description' => __('Footer 4th column)', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Footer 5','id' => 'footer-5','description' => __('Footer 1th column - second row', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Footer 6','id' => 'footer-6','description' => __('Footer 2nd column - second row', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Footer 7','id' => 'footer-7','description' => __('Footer 3rd column - second row', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Footer 8','id' => 'footer-8','description' => __('Footer 4th column - second row', 'gabfire')));
+
+			sharp_register_sidebar(array('name' => 'Mag Category - Left','id' => 'archive-mag-left','description' => __('Archive Magazine and Homepage No Slider template - Left Sidebar', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Primary Mid Top','id' => 'primary-mid-top','description' => __('Below featured - mid column top', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Primary Mid Bottom','id' => 'primary-right-bottom','description' => __('Below featured - mid column bottom', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Primary Left Top','id' => 'primary-left-top','description' => __('Below featured - Left column top', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Primary Left Bottom','id' => 'primary-left-bottom','description' => __('Below featured - Left column bottom', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'PostWidget','id' => 'PostWidget','description' => __('Single post page - below entry', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Primary Bottom 1','id' => 'primarybottom-1','description' => __('Primary Bottom 1/4 column', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Primary Bottom 2','id' => 'primarybottom-2','description' => __('Primary Bottom 2/4 column', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Primary Bottom 3','id' => 'primarybottom-3','description' => __('Primary Bottom 3/4 column', 'gabfire')));
+			sharp_register_sidebar(array('name' => 'Primary Bottom 4','id' => 'primarybottom-4','description' => __('Primary Bottom 4/4 column', 'gabfire')));
 		}
-		add_action( 'widgets_init', 'gabfire_widgets_init' );
-	} //gabfire_register_sidebar
+		add_action( 'widgets_init', 'sharp_widgets_init' );
+	} //sharp_register_sidebar
 
 /**
  * Include the TGM_Plugin_Activation class.
  */
-require_once dirname( __FILE__ ) . '/framework/tgmpa/class-tgm-plugin-activation.php';
+//require_once dirname( __FILE__ ) . '/framework/tgmpa/class-tgm-plugin-activation.php';
 
-//add_action( 'tgmpa_register', 'gabfire_register_reguired_plugins' );
+//add_action( 'tgmpa_register', 'sharp_register_reguired_plugins' );
 /**
  * Register the required plugins for this theme.
  *
@@ -180,7 +173,7 @@ require_once dirname( __FILE__ ) . '/framework/tgmpa/class-tgm-plugin-activation
  * This function is hooked into tgmpa_init, which is fired within the
  * TGM_Plugin_Activation class constructor.
  */
-function gabfire_register_reguired_plugins() {
+function sharp_register_reguired_plugins() {
 	/*
 	 * Array of plugin arrays. Required keys are name and slug.
 	 * If the source is NOT from the .org repo, then source is also required.
@@ -188,11 +181,13 @@ function gabfire_register_reguired_plugins() {
 	$plugins = array(
 
 		// This is an example of how to include a plugin from the WordPress Plugin Repository.
+/*
 		array(
 			'name'      => 'Bootstrap Shortcodes for WordPress',
 			'slug'      => 'bootstrap-3-shortcodes',
 			'required'  => false,
 		),
+*/
 
 		array(
 			'name'      => 'Gabfire Media Module',
@@ -200,29 +195,27 @@ function gabfire_register_reguired_plugins() {
 			'required'  => false,
 		),
 
+/*
 		array(
 			'name'      => 'OTF Regenerate Thumbnails',
 			'slug'      => 'otf-regenerate-thumbnails',
 			'required'  => false,
 		),
+*/
 
+/*
 		array(
 			'name'      => 'Gabfire Widget Pack',
 			'slug'      => 'gabfire-widget-pack',
 			'required'  => false,
 		),
+*/
 
 		array(
 			'name'      => 'The Events Calendar',
 			'slug'      => 'the-events-calendar',
 			'required'  => false,
 		),
-
-		array(
-			'name'      => 'WooCommerce - excelling eCommerce',
-			'slug'      => 'woocommerce',
-			'required'  => false,
-		)
 
 	);
 

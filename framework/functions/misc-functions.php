@@ -7,13 +7,13 @@ if ( !defined('ABSPATH')) exit;
  * variable and display name of widget zone to ste admin if the
  * option 'display widget map' is activated on theme control panel
  ******************************************************************** */
-  if ( ! function_exists( 'gabfire_dynamic_sidebar' ) ) {
-	function gabfire_dynamic_sidebar($widgetname)
+  if ( ! function_exists( 'sharp_dynamic_sidebar' ) ) {
+	function sharp_dynamic_sidebar($widgetname)
 	{
-	  dynamic_sidebar($widgetname);  
-	  if((get_option('sharp_widget') == 1) and current_user_can('manage_options') ) { 
-		echo '<span class="widgetmapname">'.$widgetname.'</span>'; 
-	  }  
+	  dynamic_sidebar($widgetname);
+	  if((get_option('sharp_widget') == 1) and current_user_can('manage_options') ) {
+		echo '<span class="widgetmapname">'.$widgetname.'</span>';
+	  }
 	}
   }
 
@@ -26,15 +26,15 @@ if ( !defined('ABSPATH')) exit;
 	function current_catID() {
 		global $wp_query,  $cat_obj, $currentcat;
 
-		if (is_category()) {	
+		if (is_category()) {
 			$cat_obj = $wp_query->get_queried_object();
 			$currentcat = $cat_obj->term_id;
-		} 
+		}
 		elseif (is_single() and !is_attachment()) {
 			$category = get_the_category();
 			$currentcat = $category[0]->cat_ID;
 		}
-		
+
 		return $currentcat;
 	}
   }
@@ -55,35 +55,35 @@ if ( !defined('ABSPATH')) exit;
   }
 
 /* ********************
- * Limit post excerpts. Within theme files used as 
+ * Limit post excerpts. Within theme files used as
  * print string_limit_words(get_the_excerpt(), 16);
  ******************************************************************** */
     if ( ! function_exists( 'string_limit_words' ) ) {
 		function string_limit_words($limit) {
 			global $post, $page;
-			
+
 			if( $post->post_excerpt ) {
 				$excerpt = the_excerpt();
-				
+
 			} else {
-				
+
 				$excerpt = explode(' ', get_the_excerpt(), $limit);
-				
+
 				if (count($excerpt) >= $limit) {
 					array_pop($excerpt);
 					$excerpt = implode(" ",$excerpt);
-					
+
 					if ( substr($excerpt, -1) !== '.' ) {
 						$excerpt .= '&hellip;';
-					}			
-					
+					}
+
 				} else {
 					$excerpt = implode(" ",$excerpt);
 				}
-				
+
 				$excerpt = preg_replace('`[[^]]*]`','',$excerpt);
 			}
-			
+
 			return $excerpt;
 		}
 	}
@@ -105,7 +105,20 @@ if ( !defined('ABSPATH')) exit;
 		echo '</span>';
 	}
   }
-	
+
+  if ( ! function_exists( 'gabfire_bycat' ) ) {
+	function gabfire_bycat() {
+		global $post;
+		$author_id=$post->post_author;
+		echo '<span class="gabfire_meta gabfiremeta_bydate">';
+		$authorlink = '<span class="author vcard" itemscope="itemscope" itemtype="http://schema.org/Person" itemprop="author"><a href="'.get_author_posts_url($post->post_author).'" rel="author" class="fn" itemprop="name">'.  get_the_author_meta( 'display_name', $post->post_author ) . '</a></span>';
+		$cat = get_the_category();
+		$catspan = '<span class="gabfire_meta gabfiremeta_cats"> ' . $cat[0]->name . '</span>';
+		printf(esc_attr__('by %1$s in %2$s','gabfire'), $authorlink, $catspan);
+		echo '</span>';
+	}
+  }
+
   if ( ! function_exists( 'gabfire_postcomment' ) ) {
 	function gabfire_postcomment() { /* We first create a function to get the post permalink with read more anchor */
 		echo '<span class="gabfire_meta gabfiremeta_comment">';
@@ -114,8 +127,8 @@ if ( !defined('ABSPATH')) exit;
 		echo '</span>';
 	}
   }
-  
-  if ( ! function_exists( 'gabfire_commentsnr' ) ) {	
+
+  if ( ! function_exists( 'gabfire_commentsnr' ) ) {
 	function gabfire_commentsnr() {
 		if (get_post_type( get_the_ID() ) == 'post') {
 		/* get the number of comments */
@@ -129,59 +142,59 @@ if ( !defined('ABSPATH')) exit;
 		}
 	}
   }
-  
-  if ( ! function_exists( 'gabfire_permalink' ) ) {		
+
+  if ( ! function_exists( 'gabfire_permalink' ) ) {
 	function gabfire_permalink() {
 		echo '<span class="gabfire_meta gabfiremeta_readmore"><i class="fa fa-plus-circle"></i> <a href="'. get_the_permalink() . '" title="'; printf( esc_attr__( 'Permalink to %s', 'gabfire' ), the_title_attribute( 'echo=0' ) ); echo'" rel="bookmark">'; esc_attr_e('Read More', 'gabfire'); echo '</a></span>';
 	}
   }
-  
-  if ( ! function_exists( 'gabfire_author' ) ) {		
+
+  if ( ! function_exists( 'gabfire_author' ) ) {
 	function gabfire_author() {
 		global $post;
-		$author_id=$post->post_author;		
+		$author_id=$post->post_author;
 		echo '<span class="gabfire_meta gabfiremeta_author"><a class="author vcard" href="'.get_author_posts_url($post->post_author).'" rel="author"><span class="fn">'.  get_the_author_meta( 'display_name', $post->post_author ) . '</span></a></span>';
 	}
   }
-  
-  if ( ! function_exists( 'gabfire_posttags' ) ) {		
+
+  if ( ! function_exists( 'gabfire_posttags' ) ) {
 	function gabfire_posttags() {
 		the_tags('<span class="gabfire_meta gabfire_tags"><i class="fa fa-tags"></i> ',', ','</span>');
 	}
   }
 
-  if ( ! function_exists( 'gabfire_cats' ) ) {	  
+  if ( ! function_exists( 'gabfire_cats' ) ) {
 	function gabfire_cats() {
 		echo '<span class="gabfire_meta gabfiremeta_cats"><i class="fa fa-folder-o"></i> '; the_category(', '); echo '</span>';
 	}
   }
 
-  if ( ! function_exists( 'gabfire_editpost' ) ) {	  
+  if ( ! function_exists( 'gabfire_editpost' ) ) {
 	function gabfire_editpost() {
 		if( current_user_can( 'edit_posts' ) ) {
 			echo '<span class="gabfire_meta gabfiremeta_edit"><span><i class="fa fa-pencil-square-o"></i> <a href="'.get_edit_post_link().'">Edit</a></span></span>';
 		}
 	}
   }
-  
-  if ( ! function_exists( 'gabfire_postmeta' ) ) {		
+
+  if ( ! function_exists( 'gabfire_postmeta' ) ) {
 	function gabfire_postmeta($p_tag = true,$bydate = true,$comment = true,$tags = true,$cats = true,$permalink = true,$editpost = true) {
 			echo (true === $p_tag)         ? '<p class="postmeta">' : "";
-				echo (true === $bydate)    ? gabfire_bydate()       : "";
+				echo (true === $bydate)    ? gabfire_bycat()       : "";
 				echo (true === $comment)   ? gabfire_postcomment()  : "";
 				echo (true === $tags)      ? gabfire_posttags()     : "";
 				echo (true === $cats)      ? gabfire_cats()         : "";
 				echo (true === $permalink) ? gabfire_permalink()    : "";
 				echo (true === $editpost)  ? gabfire_editpost()     : "";
 			echo (true === $p_tag)         ? '</p>'                 : "";
-	}	
+	}
   }
 
 /* ********************
- * Truncate post title. 
+ * Truncate post title.
  * default usage gabfire_posttitle(title length,string after title)
  ******************************************************************** */
-   if ( ! function_exists( 'gabfire_posttitle' ) ) {	
+   if ( ! function_exists( 'gabfire_posttitle' ) ) {
     function gabfire_posttitle($t_length,$t_end) {
         global $post;
         $thetitle = $post->post_title;
@@ -195,7 +208,7 @@ if ( !defined('ABSPATH')) exit;
             echo substr($thetitle, 0, $thelength);
         }
         if ($getlength > $thelength) echo $t_end;
-    }  
+    }
    }
 
 /* ********************
@@ -203,16 +216,16 @@ if ( !defined('ABSPATH')) exit;
  * single postpage slider that auto grabs all attached pictures
  * and displays them with a nice slider
  ******************************************************************** */
-   if ( ! function_exists( 'gabfire_innerslider' ) ) {	
+   if ( ! function_exists( 'gabfire_innerslider' ) ) {
 	 function gabfire_innerslider() {
 		global $post, $page;
 		if (get_option('sharp_inslider') == 'sitewide') {
 			get_template_part( 'inc/theme-gallery', '' );
-		} 
+		}
 		elseif (
-				( get_option('sharp_inslider') == 'tagbased') and (has_tag(get_option('sharp_inslider_tag')) ) 
-			or 
-				(  has_term( get_option('sharp_inslider_tag') , 'gallery-tag', '' )) ) 
+				( get_option('sharp_inslider') == 'tagbased') and (has_tag(get_option('sharp_inslider_tag')) )
+			or
+				(  has_term( get_option('sharp_inslider_tag') , 'gallery-tag', '' )) )
 		{
 			get_template_part( 'inc/theme-gallery', '' );
 		}
@@ -224,7 +237,7 @@ if ( !defined('ABSPATH')) exit;
  * add video-post as a class into post_class function
  * based on custom fields defined within post.
  ******************************************************************** */
-   if ( ! function_exists( 'gabfire_post_classes' ) ) {	
+   if ( ! function_exists( 'gabfire_post_classes' ) ) {
 	add_filter('post_class','gabfire_post_classes');
 
 	function gabfire_post_classes( $classes ) {
@@ -240,37 +253,37 @@ if ( !defined('ABSPATH')) exit;
  * sample snippet to use
  * if ( get_current_post_type() == 'post' ) { }
  ******************************************************************** */
-    if ( ! function_exists( 'get_current_post_type' ) ) {	
+    if ( ! function_exists( 'get_current_post_type' ) ) {
 		function get_current_post_type() {
 		  global $post, $typenow, $current_screen;
-			
+
 		  //we have a post so we can just get the post type from that
 		  if ( $post && $post->post_type )
 			return $post->post_type;
-			
+
 		  //check the global $typenow - set in admin.php
 		  elseif( $typenow )
 			return $typenow;
-			
+
 		  //check the global $current_screen object - set in sceen.php
 		  elseif( $current_screen && $current_screen->post_type )
 			return $current_screen->post_type;
-		  
+
 		  //lastly check the post_type querystring
 		  elseif( isset( $_REQUEST['post_type'] ) )
 			return sanitize_key( $_REQUEST['post_type'] );
-			
+
 		  //we do not know the post type!
 		  return null;
 		}
 	}
-	
+
 /* ********************
  * Add css class last_archivepost to last posts
  * in archive query
  * used in conjunction with post_class('archive-post')
  ******************************************************************** */
-if ( ! function_exists( 'last_post_class' ) ) { 
+if ( ! function_exists( 'last_post_class' ) ) {
 	add_filter('post_class', 'last_post_class');
 	function last_post_class($classes) {
 
@@ -278,16 +291,16 @@ if ( ! function_exists( 'last_post_class' ) ) {
 		if(($wp_query->current_post+1) == $wp_query->post_count) {
 			$classes[] = 'last_archivepost';
 		}
-		
+
 		return $classes;
 	}
 }
 
 /* ********************
  * Return WordPress Archive Pagination
- * into a function 
- ******************************************************************** */	
- if ( ! function_exists( 'gabfire_archivepagination' ) ) { 
+ * into a function
+ ******************************************************************** */
+ if ( ! function_exists( 'gabfire_archivepagination' ) ) {
 	 function gabfire_archivepagination() {
 		if((get_next_posts_link()) or (get_previous_posts_link())) { ?>
 			<div class="archive-pagination">
@@ -312,7 +325,7 @@ if ( ! function_exists( 'last_post_class' ) ) {
 /* ********************
  * Get name of custom navigation
  ******************************************************************** */
-  if ( ! function_exists( 'gabfire_menu_name' ) ) { 
+  if ( ! function_exists( 'gabfire_menu_name' ) ) {
 	function gabfire_menu_name( $location ) {
 		if( empty($location) ) return false;
 
@@ -324,12 +337,12 @@ if ( ! function_exists( 'last_post_class' ) ) {
 		return $menu_obj;
 	}
   }
-  
+
 /* ********************
  * If defined, display custom css on top of header
  ******************************************************************** */
 if (!function_exists('gabfire_head_css')) {
-	function gabfire_head_css() {		
+	function gabfire_head_css() {
 		// OUTPUT STYLES
 		$output = '';
 		$output = get_option('custom_css');

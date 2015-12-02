@@ -88,7 +88,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-9 col-md-9 below-fea-left">
 				
-					<?php gabfire_dynamic_sidebar('primary-left-top'); ?>
+					<?php sharp_dynamic_sidebar('primary-left-top'); ?>
 					
 					<div class="belowfea_firstcol">
 					
@@ -172,11 +172,11 @@
 						</div><!-- belowfea_thirdcol -->
 					<?php } ?>
 					
-					<?php gabfire_dynamic_sidebar('primary-left-bottom'); ?>
+					<?php sharp_dynamic_sidebar('primary-left-bottom'); ?>
 				</div>
 				
 				<div class="col-xs-12 col-sm-3 col-md-3 primarytop-mid">
-					<?php gabfire_dynamic_sidebar('primary-mid-top'); ?>
+					<?php sharp_dynamic_sidebar('primary-mid-top'); ?>
 				
 					<div class="widget text-center">
 						<?php if ( get_option('sharp_cap3img') <> "" ) { ?>
@@ -216,7 +216,7 @@
 						</div>
 					</div><!-- widget -->
 					
-					<?php gabfire_dynamic_sidebar('primary-mid-bottom'); ?>
+					<?php sharp_dynamic_sidebar('primary-mid-bottom'); ?>
 					
 					<div class="clearfix visible-xs"></div>
 					
@@ -281,7 +281,7 @@
 
 				<div class="col-xs-6 col-sm-6 col-md-3 subnewscol col<?php echo $current; ?>">
 
-					<?php gabfire_dynamic_sidebar( 'primarybottom-'.$widgetid ); ?>
+					<?php sharp_dynamic_sidebar( 'primarybottom-'.$widgetid ); ?>
 					
 					<span class="topspan" style="background-color: rgb(<?php echo $rgb; ?>);"></span>
 
