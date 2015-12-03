@@ -113,7 +113,7 @@ if ( !defined('ABSPATH')) exit;
 		echo '<span class="gabfire_meta gabfiremeta_bydate">';
 		$authorlink = '<span class="author vcard" itemscope="itemscope" itemtype="http://schema.org/Person" itemprop="author"><a href="'.get_author_posts_url($post->post_author).'" rel="author" class="fn" itemprop="name">'.  get_the_author_meta( 'display_name', $post->post_author ) . '</a></span>';
 		$cat = get_the_category();
-		$catspan = '<span class="gabfire_meta gabfiremeta_cats"> ' . $cat[0]->name . '</span>';
+		$catspan = '<span class="gabfire_meta gabfiremeta_cats"><a href="' . get_category_link($cat[0]->term_id) . '"> ' . $cat[0]->name . '</span>';
 		printf(esc_attr__('by %1$s in %2$s','gabfire'), $authorlink, $catspan);
 		echo '</span>';
 	}

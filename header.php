@@ -17,7 +17,7 @@
 
 <div class="container">
 	<header itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-		<div class="row">
+		<div class="row site-masthead-container">
 			<div class="col-md-12">
 				<div class="site-masthead">
 					<nav itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
@@ -45,8 +45,7 @@
         								$icon_instagram = get_option('sharp_instagram');
         								$icon_youtube = get_option('sharp_youtube');
         								$icon_vimeo = get_option('sharp_vimeo');
-        								$icon_email = get_option('sharp_email');
-        								$icon_rss = get_option('sharp_rss');
+        								$icon_rss = get_option('sharp_sitefeed');
     								?>
 
 									<?php if ( $icon_facebook <> "" ) { ?>
@@ -103,15 +102,11 @@
 										</a>
 									<?php } ?>
 
-									<?php if ( $icon_email <> "" ) { ?>
-										<a href="<?php echo $icon_email; ?>" title="<?php _e('Subscribe by Email', 'gabfire'); ?>" rel="nofollow"><span><?php _e('Subscribe by Email','gabfire'); ?></span>
-											<i class="fa fa-envelope-o pull-left"></i>
-										</a>
+                                    <?php if ( $icon_rss <> "" ) { ?>
+    									<a href="<?php echo bloginfo('rss2_url'); ?>" title="<?php _e('Site feed', 'gabfire'); ?>" rel="nofollow">
+    										<span><?php _e('Subscribe to RSS','gabfire'); ?></span> <i class="fa fa-rss pull-left"></i>
+    									</a>
 									<?php } ?>
-
-									<a href="<?php if ( $icon_rss <> "" ) { echo $icon_rssl; } else { echo bloginfo('rss2_url'); } ?>" title="<?php _e('Site feed', 'gabfire'); ?>" rel="nofollow">
-										<span><?php _e('Subscribe to RSS','gabfire'); ?></span> <i class="fa fa-rss pull-left"></i>
-									</a>
 
 							</li>
 
@@ -188,19 +183,25 @@
 							wp_list_categories('title_li=');
 						}
 
-						$colored_itemcount = get_option('sharp_navcolornr');
-						$options = array();
-						for ($i=1; $i<=$colored_itemcount;$i++) {
-
-						$catname =  get_cat_name(get_option('sharp_navlink'.$i));
+						$colored_nav_text = get_option('sharp_navcolortext');
+                        $colored_nav_link = get_option('sharp_navcolorlink');
+                        $colored_nav_color = get_option('sharp_navcolor1');
 						?>
-							<li class="color<?php echo $i; ?> colored-nav-item">
-								<a href="<?php echo get_category_link(get_option('sharp_navlink'.$i)); ?>" style="background-color:<?php echo get_option('sharp_navcolor'.$i); ?>"><?php echo $catname; ?></a>
+
+						<?php if ($colored_nav_link <> '') { ?>
+							<li class="colored-nav-item">
+								<a href="<?php echo $colored_nav_link; ?>" style="background-color:<?php echo $colored_nav_color; ?>"><?php echo $colored_nav_text; ?></a>
 							</li><?php echo "\n";
 						}
 						?>
 					</ul>
 				</nav>
+			</div>
+		</div>
+
+		<div class="header-below">
+			<div>
+				<?php sharp_dynamic_sidebar('header-ad-below'); ?>
 			</div>
 		</div>
 

@@ -28,7 +28,7 @@ $fonts         = array( 'Georgia, serif',
 						'"Trebuchet MS", Helvetica, sans-serif',
 						'Verdana, Geneva, sans-serif'
                       );
-						  
+
 // If using image radio buttons, define a directory path
 $imagepath = get_template_directory_uri() . '/framework/admin/images/';
 
@@ -45,17 +45,17 @@ $options[] = array( 'title'             => __( 'Homepage', 'gabfire' ),
                     'priority'          => 22,
                     'theme_supports'    => '',
                     'type'              => 'panel' );
-					
+
 $options[] = array( 'title'             => __( 'Miscellaneous', 'gabfire' ),
                     'id'                => $shortname . 'misc',
                     'priority'          => 24,
-                    'type'              => 'panel' );	
+                    'type'              => 'panel' );
 
 $options[] = array( 'title'             => __( 'Custom Styling', 'gabfire' ),
                     'id'                => $shortname . 'styling',
                     'priority'          => 25,
-                    'type'              => 'panel' );						
-					
+                    'type'              => 'panel' );
+
 /* ---------------------------------------------------------------------------------------------------
     Sections
 --------------------------------------------------------------------------------------------------- */
@@ -68,25 +68,25 @@ $options[] = array( 'title'             => __( 'Site Identity', 'gabfire' ), // 
                     'type'              => 'section' ); // type = section
 
 //Colored Navigation Section
-$options[] = array( 'title'             => __( 'Colored Nav Items', 'gabfire' ),
+$options[] = array( 'title'             => __( 'Colored Nav Item', 'gabfire' ),
 					'panel'				=> 'nav_menus',
-					'description'       => 'Setup colored navigation links on Primary menu', // Section description
+					'description'       => 'Setup colored navigation link on Primary menu', // Section description
 					'priority'          => 50,
                     'id'                => $shortname . 'colorednav',
-                    'type'              => 'section' );				
-					
+                    'type'              => 'section' );
+
 //Homepage Sections
 $options[] = array( 'title'             => __( 'Front Page Template', 'gabfire' ),
                     'panel'             => $shortname . 'homepage',
                     'id'                => 'static_front_page',
                     'type'              => 'section' );
-					
-$options[] = array( 'title'             => __( 'Featured Slider', 'gabfire' ),
+
+$options[] = array( 'title'             => __( 'Featured Area', 'gabfire' ),
                     'panel'             => $shortname . 'homepage',
                     'id'                => $shortname . 'featured',
                     'type'              => 'section' );
 
-$options[] = array( 'title'             => __( 'Primary Top', 'gabfire' ),
+$options[] = array( 'title'             => __( 'Primary Column', 'gabfire' ),
                     'panel'             => $shortname . 'homepage',
                     'id'                => $shortname . 'primarytop',
                     'type'              => 'section' );
@@ -96,7 +96,7 @@ $options[] = array( 'title'             => __( 'Sidebar', 'gabfire' ),
                     'id'                => $shortname . 'sidebar',
                     'type'              => 'section' );
 
-$options[] = array( 'title'             => __( 'Subnews', 'gabfire' ),
+$options[] = array( 'title'             => __( 'Secondary Rows', 'gabfire' ),
                     'panel'             => $shortname . 'homepage',
                     'id'                => $shortname . 'subnews',
                     'type'              => 'section' );
@@ -105,30 +105,21 @@ $options[] = array( 'title'             => __( 'Subnews', 'gabfire' ),
 $options[] = array( 'title'             => __( 'Social', 'gabfire' ),
                     'id'                => $shortname . 'social',
                     'priority'          => 23,
-                    'type'              => 'section' );			
-					
-//Misc Section	
-$options[] = array( 'title'             => __( 'Sliders', 'gabfire' ),
-					'panel'             => $shortname . 'misc',
-					'id'                => $shortname . 'sliders',
-					'type'              => 'section' );
-							
+                    'type'              => 'section' );
+
+//Misc Section
+
 $options[] = array( 'title'             => __( 'Category Templates', 'gabfire' ),
 					'panel'             => $shortname . 'misc',
                     'id'                => $shortname . 'cattemps',
-                    'type'              => 'section' );
-						
-$options[] = array( 'title'             => __( 'Other Settings', 'gabfire' ),
-					'panel'             => $shortname . 'misc',
-                    'id'                => $shortname . 'othersettings',
                     'type'              => 'section' );
 
 $options[] = array( 'title'             => __( 'Other Settings', 'gabfire' ),
 					'panel'             => $shortname . 'misc',
                     'id'                => $shortname . 'othersettings',
                     'type'              => 'section' );
-					
-//Styling Section	
+
+//Styling Section
 $options[] = array( 'title'             => __( 'Custom CSS', 'gabfire' ),
 					'panel'             => $shortname . 'styling',
                     'id'                => $shortname . 'customcss',
@@ -138,17 +129,17 @@ $options[] = array( 'title'             => __( 'Background Color', 'gabfire' ),
 					'panel'             => $shortname . 'styling',
                     'id'                => 'colors',
                     'type'              => 'section' );
-					
+
 $options[] = array( 'title'             => __( 'Background Image', 'gabfire' ),
 					'panel'             => $shortname . 'styling',
                     'id'                => 'background_image',
                     'type'              => 'section' );
-					
-$options[] = array( 'title'             => __( 'Customize Colors', 'gabfire' ),
+
+$options[] = array( 'title'             => __( 'Customize Color', 'gabfire' ),
 					'panel'             => $shortname . 'styling',
                     'id'                => $shortname . 'customizecolors',
                     'type'              => 'section' );
-					
+
 /* ---------------------------------------------------------------------------------------------------
     Controls: General
 --------------------------------------------------------------------------------------------------- */
@@ -174,15 +165,6 @@ $options[] = array( 'title'             => __( 'Custom Logo', 'gabfire' ),
                     'default'           => '',
                     'option'            => 'image',
                     'sanitize_callback' => 'esc_url',
-                    'type'              => 'control' );					
-					
-$options[] = array( 'title'             => __( 'Display Logo on Footer', 'gabfire' ),
-                    'description'       => __( 'Check this box to display logo before footer navigation', 'gabfire' ),
-                    'section'           => 'title_tagline',
-                    'id'                => $shortname . 'footerlogo',
-                    'default'           => '',
-                    'option'            => 'checkbox',
-                    'sanitize_callback' => '',
                     'type'              => 'control' );
 
 $options[] = array( 'title'             => __( 'Logo Margin Top', 'gabfire' ),
@@ -216,22 +198,21 @@ $options[] = array( 'title'             => __( 'Logo Margin Left', 'gabfire' ),
     Controls: Colored Navigation
 --------------------------------------------------------------------------------------------------- */
 $options[] = array( 'title'             => __( 'Colored Navigation', 'gabfire' ), // Control label
-                    'description'       => __( 'Number of colored navigation items to display on both header and footer navs', 'gabfire' ),
+                    'description'       => __( 'Colored navigation item to display in header navigation', 'gabfire' ),
                     'section'           => $shortname . 'colorednav', // Add it under the section
-                    'id'                => $shortname . 'navcolornr', // unique ID
-                    'default'           => '0',
-                    'option'            => 'select',
-                    'sanitize_callback' => '',
-                    'choices'           => $options_to_10,
+                    'id'                => $shortname . 'navcolortext', // unique ID
+                    'default'           => 'Contribute',
+                    'option'            => 'text',
+                    'sanitize_callback' => 'sanitize_text_field',
                     'type'              => 'control' ); // type = control
 
 $options[] = array( 'title'             => __('Link #1', 'gabfire'),
-                    'description'       => __('Select a category', 'gabfire'),
-                    'section'           => $shortname . 'colorednav', 
-                    'id'                => $shortname . 'navlink1',
-                    'default'           => '',
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
+                    'description'       => __('Set the link address (use http://)', 'gabfire'),
+                    'section'           => $shortname . 'colorednav',
+                    'id'                => $shortname . 'navcolorlink',
+                    'default'           => '#',
+                    'option'            => 'text',
+                    'sanitize_callback' => 'sanitize_text_field',
                     'type'              => 'control' );
 
 $options[] = array( 'title'             => '',
@@ -243,181 +224,10 @@ $options[] = array( 'title'             => '',
                     'sanitize_callback' => '',
                     'type'              => 'control' );
 
-$options[] = array( 'title'             => __('Link #2', 'gabfire'),
-                    'description'       => __('Select a category', 'gabfire'),
-                    'section'           => $shortname . 'colorednav', 
-                    'id'                => $shortname . 'navlink2',
-                    'default'           => '',
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __('Select a color', 'gabfire'),
-                    'section'           => $shortname . 'colorednav',
-                    'id'                => $shortname . 'navcolor2',
-                    'default'           => '#a0a2dc',
-                    'option'            => 'color',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __('Link #3', 'gabfire'),
-                    'description'       => __('Select a category', 'gabfire'),
-                    'section'           => $shortname . 'colorednav', 
-                    'id'                => $shortname . 'navlink3',
-                    'default'           => '',
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __('Select a color', 'gabfire'),
-                    'section'           => $shortname . 'colorednav',
-                    'id'                => $shortname . 'navcolor3',
-                    'default'           => '#ff7e79',
-                    'option'            => 'color',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __('Link #4', 'gabfire'),
-                    'description'       => __('Select a category', 'gabfire'),
-                    'section'           => $shortname . 'colorednav', 
-                    'id'                => $shortname . 'navlink4',
-                    'default'           => '',
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __('Select a color', 'gabfire'),
-                    'section'           => $shortname . 'colorednav',
-                    'id'                => $shortname . 'navcolor4',
-                    'default'           => '#caa38c',
-                    'option'            => 'color',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __('Link #5', 'gabfire'),
-                    'description'       => __('Select a category', 'gabfire'),
-                    'section'           => $shortname . 'colorednav', 
-                    'id'                => $shortname . 'navlink5',
-                    'default'           => '',
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __('Select a color', 'gabfire'),
-                    'section'           => $shortname . 'colorednav',
-                    'id'                => $shortname . 'navcolor5',
-                    'default'           => '#4789b3',
-                    'option'            => 'color',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __('Link #6', 'gabfire'),
-                    'description'       => __('Select a category', 'gabfire'),
-                    'section'           => $shortname . 'colorednav', 
-                    'id'                => $shortname . 'navlink6',
-                    'default'           => '',
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __('Select a color', 'gabfire'),
-                    'section'           => $shortname . 'colorednav',
-                    'id'                => $shortname . 'navcolor6',
-                    'default'           => '#e44554',
-                    'option'            => 'color',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __('Link #7', 'gabfire'),
-                    'description'       => __('Select a category', 'gabfire'),
-                    'section'           => $shortname . 'colorednav', 
-                    'id'                => $shortname . 'navlink7',
-                    'default'           => '',
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __('Select a color', 'gabfire'),
-                    'section'           => $shortname . 'colorednav',
-                    'id'                => $shortname . 'navcolor7',
-                    'default'           => '#cc6699',
-                    'option'            => 'color',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __('Link #8', 'gabfire'),
-                    'description'       => __('Select a category', 'gabfire'),
-                    'section'           => $shortname . 'colorednav', 
-                    'id'                => $shortname . 'navlink8',
-                    'default'           => '',
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __('Select a color', 'gabfire'),
-                    'section'           => $shortname . 'colorednav',
-                    'id'                => $shortname . 'navcolor8',
-                    'default'           => '#f48d3e',
-                    'option'            => 'color',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __('Link #9', 'gabfire'),
-                    'description'       => __('Select a category', 'gabfire'),
-                    'section'           => $shortname . 'colorednav', 
-                    'id'                => $shortname . 'navlink9',
-                    'default'           => '',
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __('Select a color', 'gabfire'),
-                    'section'           => $shortname . 'colorednav',
-                    'id'                => $shortname . 'navcolor9',
-                    'default'           => '#b5cc7a',
-                    'option'            => 'color',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __('Link #10', 'gabfire'),
-                    'description'       => __('Select a category', 'gabfire'),
-                    'section'           => $shortname . 'colorednav', 
-                    'id'                => $shortname . 'navlink10',
-                    'default'           => '',
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __('Select a color', 'gabfire'),
-                    'section'           => $shortname . 'colorednav',
-                    'id'                => $shortname . 'navcolor10',
-                    'default'           => '#7ecac1',
-                    'option'            => 'color',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __('Hovered Link Background Color', 'gabfire'),
-                    'description'       => __('Select a color', 'gabfire'),
-                    'section'           => $shortname . 'colorednav', 
-                    'id'                => $shortname . 'navcolorhover',
-                    'default'           => '#ec4017',
-                    'option'            => 'color',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
 /* ---------------------------------------------------------------------------------------------------
     Controls: Homepage
 --------------------------------------------------------------------------------------------------- */
-$options[] = array( 'title'             => __( 'Featured slider', 'gabfire' ),
+$options[] = array( 'title'             => __( 'Featured area', 'gabfire' ),
                     'description'       => __( 'Select a base query type to determine how this content area is populated. If base query type is Category or Tag-based, please identify the category or tag below. If it is Custom Field, posts which are marked as featured (checkbox labeled as "Is Featured" on "Add/Edit Post" screen) will be fetched while "Recent Posts" option is going to display most recent posts across all categories on featured slider.', 'gabfire' ),
                     'section'           => $shortname . 'featured',
                     'id'                => $shortname . 'featype',
@@ -434,7 +244,7 @@ $options[] = array( 'title'             => __( 'Featured slider', 'gabfire' ),
 
 $options[] = array( 'title'             => '',
                     'description'       => __('If Category Based: Select a category', 'gabfire'),
-                    'section'           => $shortname . 'featured', 
+                    'section'           => $shortname . 'featured',
                     'id'                => $shortname . 'cat',
                     'default'           => 1,
                     'option'            => 'categories',
@@ -443,7 +253,7 @@ $options[] = array( 'title'             => '',
 
 $options[] = array( 'title'             => '',
                     'description'       => __('If Tag Based: Select a tag', 'gabfire'),
-                    'section'           => $shortname . 'featured', 
+                    'section'           => $shortname . 'featured',
                     'id'                => $shortname . 'tag',
                     'default'           => '',
                     'option'            => 'tags',
@@ -457,12 +267,12 @@ $options[] = array( 'title'             => '',
                     'default'           => 4,
                     'option'            => 'select',
                     'sanitize_callback' => '',
-                    'choices'           => $options_to_20,
+                    'choices'           => array(3),
                     'type'              => 'control' );
 
-$options[] = array( 'title'             => __( 'Primary Top First Row', 'gabfire' ),
+$options[] = array( 'title'             => __( 'Primary Top Category', 'gabfire' ),
                     'description'       => __( 'Select a category', 'gabfire' ),
-                    'section'           => $shortname . 'primarytop', 
+                    'section'           => $shortname . 'primarytop',
                     'id'                => $shortname . 'cat2',
                     'default'           => 1,
                     'option'            => 'categories',
@@ -473,230 +283,14 @@ $options[] = array( 'title'             => '',
                     'description'       => __( 'Number of entries', 'gabfire' ),
                     'section'           => $shortname . 'primarytop',
                     'id'                => $shortname . 'nr2',
-                    'default'           => 2,
+                    'default'           => 11,
                     'option'            => 'select',
-                    'choices'           => array(0,2),
+                    'choices'           => $options_to_20,
                     'type'              => 'control' );
 
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Custom caption instead of large cat name', 'gabfire' ),
-                    'section'           => $shortname . 'primarytop',
-                    'id'                => $shortname . 'cap2',
-                    'default'           => 'LATEST DESTINATION',
-                    'option'            => 'text',
-                    'sanitize_callback' => 'sanitize_text_field',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Custom caption instead of small cat name', 'gabfire' ),
-                    'section'           => $shortname . 'primarytop',
-                    'id'                => $shortname . 'cap2a',
-                    'default'           => 'Previous Destination',
-                    'option'            => 'text',
-                    'sanitize_callback' => 'sanitize_text_field',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __( 'Primary Top Second Row', 'gabfire' ),
+$options[] = array( 'title'             => __( 'Category Row #1', 'gabfire' ),
                     'description'       => __( 'Select a category', 'gabfire' ),
-                    'section'           => $shortname . 'primarytop', 
-                    'id'                => $shortname . 'cat4',
-                    'default'           => 1,
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Number of entries', 'gabfire' ),
-                    'section'           => $shortname . 'primarytop',
-                    'id'                => $shortname . 'nr4',
-                    'default'           => 1,
-                    'option'            => 'select',
-                    'choices'           =>  $options_to_20,
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Use a custom caption instead of cat name', 'gabfire' ),
-                    'section'           => $shortname . 'primarytop',
-                    'id'                => $shortname . 'cap4',
-                    'default'           => 'LATEST ARTICLES',
-                    'option'            => 'text',
-                    'sanitize_callback' => 'sanitize_text_field',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __( 'Primary Top Third Row - Left', 'gabfire' ),
-                    'description'       => __( 'Select a category', 'gabfire' ),
-                    'section'           => $shortname . 'primarytop', 
-                    'id'                => $shortname . 'top3cat1',
-                    'default'           => 1,
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Number of entries', 'gabfire' ),
-                    'section'           => $shortname . 'primarytop',
-                    'id'                => $shortname . 'top3nr1',
-                    'default'           => 1,
-                    'option'            => 'select',
-                    'choices'           =>  $options_to_20,
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __( 'Primary Top Third Row - Mid', 'gabfire' ),
-                    'description'       => __( 'Select a category', 'gabfire' ),
-                    'section'           => $shortname . 'primarytop', 
-                    'id'                => $shortname . 'top3cat2',
-                    'default'           => 1,
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Number of entries', 'gabfire' ),
-                    'section'           => $shortname . 'primarytop',
-                    'id'                => $shortname . 'top3nr2',
-                    'default'           => 1,
-                    'option'            => 'select',
-                    'choices'           =>  $options_to_20,
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __( 'Primary Top Third Row - Right', 'gabfire' ),
-                    'description'       => __( 'Select a category', 'gabfire' ),
-                    'section'           => $shortname . 'primarytop', 
-                    'id'                => $shortname . 'top3cat3',
-                    'default'           => 1,
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Number of entries', 'gabfire' ),
-                    'section'           => $shortname . 'primarytop',
-                    'id'                => $shortname . 'top3nr3',
-                    'default'           => 1,
-                    'option'            => 'select',
-                    'choices'           =>  $options_to_20,
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __( 'Right Narrow Col Below Slider', 'gabfire' ),
-                    'description'       => __( 'Select a category', 'gabfire' ),
-                    'section'           => $shortname . 'primarytop', 
-                    'id'                => $shortname . 'cat3',
-                    'default'           => 1,
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Number of entries', 'gabfire' ),
-                    'section'           => $shortname . 'primarytop',
-                    'id'                => $shortname . 'nr3',
-                    'default'           => 10,
-                    'option'            => 'select',
-                    'choices'           =>  $options_to_20,
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Use a custom caption instead of cat name', 'gabfire' ),
-                    'section'           => $shortname . 'primarytop',
-                    'id'                => $shortname . 'cap3',
-                    'default'           => 'TOP 10',
-                    'option'            => 'text',
-                    'sanitize_callback' => 'sanitize_text_field',
-                    'type'              => 'control' );
-		
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Use an image instead of text caption', 'gabfire' ), 
-                    'section'           => $shortname . 'primarytop',
-                    'id'                => $shortname . 'cap3img',
-                    'default'           => '',
-                    'option'            => 'file',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __( 'Custom Title', 'gabfire' ),
-                    'description'       => __( 'Use a custom caption above sidebar tabs', 'gabfire' ),
-                    'section'           => $shortname . 'sidebar',
-                    'id'                => $shortname . 'tabtitle',
-                    'default'           => 'POPULAR',
-                    'option'            => 'text',
-                    'sanitize_callback' => 'sanitize_text_field',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __( 'Sidebar Tabbed Slider #1', 'gabfire' ),
-                    'description'       => __( 'Select a category', 'gabfire' ),
-                    'section'           => $shortname . 'sidebar', 
-                    'id'                => $shortname . 'tabcat1',
-                    'default'           => 1,
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Number of entries', 'gabfire' ),
-                    'section'           => $shortname . 'sidebar',
-                    'id'                => $shortname . 'tabnr1',
-                    'default'           => 5,
-                    'option'            => 'select',
-                    'choices'           =>  $options_to_20,
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __( 'Sidebar Tabbed Slider #2', 'gabfire' ),
-                    'description'       => __( 'Select a category', 'gabfire' ),
-                    'section'           => $shortname . 'sidebar', 
-                    'id'                => $shortname . 'tabcat2',
-                    'default'           => 1,
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Number of entries', 'gabfire' ),
-                    'section'           => $shortname . 'sidebar',
-                    'id'                => $shortname . 'tabnr2',
-					'default'           => 5,
-                    'option'            => 'select',
-                    'choices'           =>  $options_to_20,
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __( 'Sidebar Tabbed Slider #3', 'gabfire' ),
-                    'description'       => __( 'Select a category', 'gabfire' ),
-                    'section'           => $shortname . 'sidebar', 
-                    'id'                => $shortname . 'tabcat3',
-                   'default'           => 1,
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Number of entries', 'gabfire' ),
-                    'section'           => $shortname . 'sidebar',
-                    'id'                => $shortname . 'tabnr3',
-                    'default'           => 5,
-                    'option'            => 'select',
-                    'choices'           =>  $options_to_20,
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __( 'Sidebar Tabbed Slider #4', 'gabfire' ),
-                    'description'       => __( 'Select a category', 'gabfire' ),
-                    'section'           => $shortname . 'sidebar', 
-                    'id'                => $shortname . 'tabcat4',
-                    'default'           => 1,
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Number of entries', 'gabfire' ),
-                    'section'           => $shortname . 'sidebar',
-                    'id'                => $shortname . 'tabnr4',
-                    'default'           => 5,
-                    'option'            => 'select',
-                    'choices'           =>  $options_to_20,
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __( 'Subnews #1', 'gabfire' ),
-                    'description'       => __( 'Select a category', 'gabfire' ),
-                    'section'           => $shortname . 'subnews', 
+                    'section'           => $shortname . 'subnews',
                     'id'                => $shortname . 'subcat1',
                     'default'           => 1,
                     'option'            => 'categories',
@@ -707,23 +301,22 @@ $options[] = array( 'title'             => '',
                     'description'       => __( 'Number of entries', 'gabfire' ),
                     'section'           => $shortname . 'subnews',
                     'id'                => $shortname . 'subnr1',
-                    'default'           => 3,
+                    'default'           => 0,
                     'option'            => 'select',
-                    'choices'           =>  $options_to_20,
+                    'choices'           => array(0,4),
                     'type'              => 'control' );
 
 $options[] = array( 'title'             => '',
-                    'description'       => __( 'Use a custom caption instead of cat name', 'gabfire' ),
+                    'description'       => __( 'Use a custom caption instead of category name', 'gabfire' ),
                     'section'           => $shortname . 'subnews',
                     'id'                => $shortname . 'subcap1',
-                    'default'           => 'THINGS TO DO',
                     'option'            => 'text',
                     'sanitize_callback' => 'sanitize_text_field',
                     'type'              => 'control' );
 
-$options[] = array( 'title'             => __( 'Subnews #2', 'gabfire' ),
+$options[] = array( 'title'             => __( 'Category Row #2', 'gabfire' ),
                     'description'       => __( 'Select a category', 'gabfire' ),
-                    'section'           => $shortname . 'subnews', 
+                    'section'           => $shortname . 'subnews',
                     'id'                => $shortname . 'subcat2',
                     'default'           => 1,
                     'option'            => 'categories',
@@ -734,23 +327,22 @@ $options[] = array( 'title'             => '',
                     'description'       => __( 'Number of entries', 'gabfire' ),
                     'section'           => $shortname . 'subnews',
                     'id'                => $shortname . 'subnr2',
-                    'default'           => 3,
+                    'default'           => 0,
                     'option'            => 'select',
-                    'choices'           =>  $options_to_20,
+                    'choices'           => array(0,4),
                     'type'              => 'control' );
 
 $options[] = array( 'title'             => '',
-                    'description'       => __( 'Use a custom caption instead of cat name', 'gabfire' ),
+                    'description'       => __( 'Use a custom caption instead of category name', 'gabfire' ),
                     'section'           => $shortname . 'subnews',
                     'id'                => $shortname . 'subcap2',
-                    'default'           => 'PLACES TO EAT',
                     'option'            => 'text',
                     'sanitize_callback' => 'sanitize_text_field',
                     'type'              => 'control' );
 
-$options[] = array( 'title'             => __( 'Subnews #3', 'gabfire' ),
+$options[] = array( 'title'             => __( 'Category Row #3', 'gabfire' ),
                     'description'       => __( 'Select a category', 'gabfire' ),
-                    'section'           => $shortname . 'subnews', 
+                    'section'           => $shortname . 'subnews',
                     'id'                => $shortname . 'subcat3',
                     'default'           => 1,
                     'option'            => 'categories',
@@ -761,108 +353,23 @@ $options[] = array( 'title'             => '',
                     'description'       => __( 'Number of entries', 'gabfire' ),
                     'section'           => $shortname . 'subnews',
                     'id'                => $shortname . 'subnr3',
-					'default'           => 3,
+					'default'           => 0,
                     'option'            => 'select',
-                    'choices'           =>  $options_to_20,
+                    'choices'           => array(0,4),
                     'type'              => 'control' );
 
 $options[] = array( 'title'             => '',
-                    'description'       => __( 'Use a custom caption instead of cat name', 'gabfire' ),
+                    'description'       => __( 'Use a custom caption instead of category name', 'gabfire' ),
                     'section'           => $shortname . 'subnews',
                     'id'                => $shortname . 'subcap3',
-                    'default'           => 'WHERE & WHEN',
                     'option'            => 'text',
                     'sanitize_callback' => 'sanitize_text_field',
                     'type'              => 'control' );
 
-$options[] = array( 'title'             => __( 'Subnews #4', 'gabfire' ),
-                    'description'       => __( 'Select a category', 'gabfire' ),
-                    'section'           => $shortname . 'subnews', 
-                    'id'                => $shortname . 'subcat4',
-                    'default'           => 1,
-                    'option'            => 'categories',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Number of entries', 'gabfire' ),
-                    'section'           => $shortname . 'subnews',
-                    'id'                => $shortname . 'subnr4',
-					'default'           => 3,
-                    'option'            => 'select',
-                    'choices'           =>  $options_to_20,
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Use a custom caption instead of cat name', 'gabfire' ),
-                    'section'           => $shortname . 'subnews',
-                    'id'                => $shortname . 'subcap4',
-                    'default'           => 'SHOP',
-                    'option'            => 'text',
-                    'sanitize_callback' => 'sanitize_text_field',
-                    'type'              => 'control' );
-
-/* ---------------------------------------------------------------------------------------------------
-    Controls: Sliders
---------------------------------------------------------------------------------------------------- */
-$options[] = array( 'title'             => __( 'Featured Slider', 'gabfire' ),
-                    'description'       => __( 'Auto rotation speed. Slide to next slide in X seconds (Select 0 to disable auto rotation)', 'gabfire' ),
-                    'section'           => $shortname . 'sliders', 
-                    'id'                => $shortname . 'featimeout',
-                    'default'           => 5,
-                    'option'            => 'select',
-                    'choices'           =>  $options_to_20,
-                    'type'              => 'control' );
-					
-$options[] = array( 'title'             => __( 'Media Category Slider', 'gabfire' ),
-                    'description'       => __( 'Auto rotation speed. Slide to next slide in X seconds (Select 0 to disable auto rotation)', 'gabfire' ),
-                    'section'           => $shortname . 'sliders', 
-                    'id'                => $shortname . 'mediatimeout',
-                    'default'           => 5,
-                    'option'            => 'select',
-                    'choices'           =>  $options_to_20,
-                    'type'              => 'control' );		
-
-$options[] = array( 'title'             => __( 'Sidebar Category Slider', 'gabfire' ),
-                    'description'       => __( 'Auto rotation speed. Slide to next slide in X seconds (Select 0 to disable auto rotation)', 'gabfire' ),
-                    'section'           => $shortname . 'sliders', 
-                    'id'                => $shortname . 'sidebartimeout',
-                    'default'           => 5,
-                    'option'            => 'select',
-                    'choices'           =>  $options_to_20,
-                    'type'              => 'control' );							
-					
-$options[] = array( 'title'             => __( 'Post Gallery', 'gabfire' ),
-                    'description'       => __( 'Automatically create a slideshow of uploaded photos in post entries to be displayed below post title. [Note: Inner-Page options include a) displaying slider site-wide b) tag-based c) or to disable completely].', 'gabfire' ),
-                    'section'           => $shortname . 'sliders', 
-                    'id'                => $shortname . 'inslider',
-                    'default'           => 'disable',
-                    'option'            => 'select',
-                    'choices'           =>  $innerslide,
-                    'type'              => 'control' );
-
-$options[] = array( 'title'             => __( 'Post Gallery: If Tag Based', 'gabfire' ),
-                    'description'       => __( 'If tag-based option is selected, display posts assigned this tag to be shown in inner-page slider. (Note: Posts with multiple image attachments and assigned this tag will display an inner-page slider).', 'gabfire' ), // Control label
-                    'section'           => $shortname . 'sliders', // section
-                    'id'                => $shortname . 'inslider_tag', // unique ID
-                    'default'           => '',
-                    'option'            => 'tags',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' ); // type = control
-					
-$options[] = array( 'title'             => __( 'Post Gallery: Auto Rotation Speed', 'gabfire' ),
-                    'description'       => __( 'Auto rotation speed. Slide to next slide in X seconds (Select 0 to disable auto rotation)', 'gabfire' ),
-                    'section'           => $shortname . 'sliders',
-                    'id'                => $shortname . 'inner_speed',
-                    'default'           => 0,
-                    'option'            => 'select',
-                    'sanitize_callback' => '',
-                    'choices'           => $options_to_20,
-                    'type'              => 'control' );
 
 /* ---------------------------------------------------------------------------------------------------
     Controls: Social
---------------------------------------------------------------------------------------------------- */					
+--------------------------------------------------------------------------------------------------- */
 $options[] = array( 'title'             => __( 'Header - Social Items', 'gabfire' ),
                     'description'       => __( 'Display social icons on masthead', 'gabfire' ),
                     'section'           => $shortname . 'social',
@@ -871,7 +378,7 @@ $options[] = array( 'title'             => __( 'Header - Social Items', 'gabfire
                     'option'            => 'checkbox',
                     'sanitize_callback' => '',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => __( 'Link To Social Sites', 'gabfire' ),
                     'description'       => __( 'Facebook Account Link', 'gabfire' ),
                     'section'           => $shortname . 'social',
@@ -880,7 +387,7 @@ $options[] = array( 'title'             => __( 'Link To Social Sites', 'gabfire'
                     'option'            => 'url',
                     'sanitize_callback' => 'esc_url',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( 'Twitter Account Link', 'gabfire' ),
                     'section'           => $shortname . 'social',
@@ -889,7 +396,7 @@ $options[] = array( 'title'             => '',
                     'option'            => 'url',
                     'sanitize_callback' => 'esc_url',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( 'Google Plus Account Link', 'gabfire' ),
                     'section'           => $shortname . 'social',
@@ -898,7 +405,7 @@ $options[] = array( 'title'             => '',
                     'option'            => 'url',
                     'sanitize_callback' => 'esc_url',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( 'LinkedIn Account Link', 'gabfire' ),
                     'section'           => $shortname . 'social',
@@ -907,7 +414,7 @@ $options[] = array( 'title'             => '',
                     'option'            => 'url',
                     'sanitize_callback' => 'esc_url',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( 'Pinterest Account Link', 'gabfire' ),
                     'section'           => $shortname . 'social',
@@ -916,7 +423,7 @@ $options[] = array( 'title'             => '',
                     'option'            => 'url',
                     'sanitize_callback' => 'esc_url',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( 'Tumblr Account Link', 'gabfire' ),
                     'section'           => $shortname . 'social',
@@ -925,7 +432,7 @@ $options[] = array( 'title'             => '',
                     'option'            => 'url',
                     'sanitize_callback' => 'esc_url',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( 'Instagram Account Link', 'gabfire' ),
                     'section'           => $shortname . 'social',
@@ -934,7 +441,7 @@ $options[] = array( 'title'             => '',
                     'option'            => 'url',
                     'sanitize_callback' => 'esc_url',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( 'Vimeo Account Link', 'gabfire' ),
                     'section'           => $shortname . 'social',
@@ -943,7 +450,7 @@ $options[] = array( 'title'             => '',
                     'option'            => 'url',
                     'sanitize_callback' => 'esc_url',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( 'Youtube Account Link', 'gabfire' ),
                     'section'           => $shortname . 'social',
@@ -952,7 +459,7 @@ $options[] = array( 'title'             => '',
                     'option'            => 'url',
                     'sanitize_callback' => 'esc_url',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => 'RSS Site Feed',
                     'description'       => __( 'Display a link to site feeds on masthead navigation', 'gabfire' ),
                     'section'           => $shortname . 'social',
@@ -960,20 +467,11 @@ $options[] = array( 'title'             => 'RSS Site Feed',
                     'default'           => '',
                     'option'            => 'checkbox',
                     'sanitize_callback' => '',
-                    'type'              => 'control' );					
-
-$options[] = array( 'title'             => '',
-                    'description'       => __( 'Link to subscribe RSS via Email', 'gabfire' ),
-                    'section'           => $shortname . 'social',
-                    'id'                => $shortname . 'email',
-                    'default'           => '',
-                    'option'            => 'url',
-                    'sanitize_callback' => 'esc_url',
                     'type'              => 'control' );
-					
+
 /* ---------------------------------------------------------------------------------------------------
     Controls: Misc
---------------------------------------------------------------------------------------------------- */					
+--------------------------------------------------------------------------------------------------- */
 $options[] = array( 'title'             => __( 'Category Templates', 'gabfire' ),
                     'description'       => __( '2 column cat template. Separate with comma if more than 1 category entered. (ex: 1,5,99)', 'gabfire' ),
                     'section'           => $shortname . 'cattemps',
@@ -982,7 +480,7 @@ $options[] = array( 'title'             => __( 'Category Templates', 'gabfire' )
                     'option'            => 'text',
                     'sanitize_callback' => 'sanitize_text_field',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( '3 column category template IDs.', 'gabfire' ),
                     'section'           => $shortname . 'cattemps',
@@ -991,7 +489,7 @@ $options[] = array( 'title'             => '',
                     'option'            => 'text',
                     'sanitize_callback' => 'sanitize_text_field',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( '4 column category template.', 'gabfire' ),
                     'section'           => $shortname . 'cattemps',
@@ -1000,7 +498,7 @@ $options[] = array( 'title'             => '',
                     'option'            => 'text',
                     'sanitize_callback' => 'sanitize_text_field',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( '2 column no sidebar category template IDs.', 'gabfire' ),
                     'section'           => $shortname . 'cattemps',
@@ -1009,7 +507,7 @@ $options[] = array( 'title'             => '',
                     'option'            => 'text',
                     'sanitize_callback' => 'sanitize_text_field',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( '3 column cat  no sidebar template IDs.', 'gabfire' ),
                     'section'           => $shortname . 'cattemps',
@@ -1018,7 +516,7 @@ $options[] = array( 'title'             => '',
                     'option'            => 'text',
                     'sanitize_callback' => 'sanitize_text_field',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( '4 column no sidebar cat template.', 'gabfire' ),
                     'section'           => $shortname . 'cattemps',
@@ -1027,7 +525,7 @@ $options[] = array( 'title'             => '',
                     'option'            => 'text',
                     'sanitize_callback' => 'sanitize_text_field',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( 'Media category template.', 'gabfire' ),
                     'section'           => $shortname . 'cattemps',
@@ -1036,7 +534,7 @@ $options[] = array( 'title'             => '',
                     'option'            => 'text',
                     'sanitize_callback' => 'sanitize_text_field',
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( 'Magazine category layout.', 'gabfire' ),
                     'section'           => $shortname . 'cattemps',
@@ -1045,16 +543,7 @@ $options[] = array( 'title'             => '',
                     'option'            => 'text',
                     'sanitize_callback' => 'sanitize_text_field',
                     'type'              => 'control' );
-					
-$options[] = array( 'title'             => __( 'RSS Feed Burner', 'gabfire' ),
-                    'description'       => __( 'Link to a third party feed handler', 'gabfire' ),
-                    'section'           => $shortname . 'othersettings',
-                    'id'                => $shortname . 'rssaddr',
-                    'default'           => '',
-                    'option'            => 'url',
-                    'sanitize_callback' => 'esc_url',
-                    'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => __( 'Do not duplicate posts', 'gabfire' ),
                     'description'       => __( 'Regardless of category selections, do not duplicate posts on homepage. This prevents the same post from appearing in multiple sections (good for SEO)', 'gabfire' ),
                     'section'           => $shortname . 'othersettings',
@@ -1062,8 +551,8 @@ $options[] = array( 'title'             => __( 'Do not duplicate posts', 'gabfir
                     'default'           => 0,
                     'option'            => 'checkbox',
                     'sanitize_callback' => '',
-                    'type'              => 'control' );							
-					
+                    'type'              => 'control' );
+
 $options[] = array( 'title'             => __( 'Featured Image Post Display', 'gabfire' ),
                     'description'       => __( 'Auto resize and display featured image on single post - above entry', 'gabfire' ),
                     'section'           => $shortname . 'othersettings',
@@ -1072,7 +561,7 @@ $options[] = array( 'title'             => __( 'Featured Image Post Display', 'g
                     'option'            => 'checkbox',
                     'sanitize_callback' => '',
                     'type'              => 'control' );
-										
+
 $options[] = array( 'title'             => __( 'Widget Map', 'gabfire' ),
                     'description'       => __( 'Display the location of widgets on front page. After reviewing widget locations be sure to disable this option.', 'gabfire' ),
                     'section'           => $shortname . 'othersettings',
@@ -1080,8 +569,8 @@ $options[] = array( 'title'             => __( 'Widget Map', 'gabfire' ),
                     'default'           => '',
                     'option'            => 'checkbox',
                     'sanitize_callback' => '',
-                    'type'              => 'control' );		
-					
+                    'type'              => 'control' );
+
 /* ---------------------------------------------------------------------------------------------------
     Controls: Custom Styling
 --------------------------------------------------------------------------------------------------- */
@@ -1096,52 +585,9 @@ $options[] = array( 'title'             => __( 'Custom CSS', 'gabfire' ),
 
 /* ---------------------------------------------------------------------------------------------------
     Controls: Customize Colors
---------------------------------------------------------------------------------------------------- */				
-$options[] = array( 'title'             => __( 'Customize Fonts and/or Colors', 'gabfire' ),
-                    'description'       => __( 'This is a master trigger to enable/disable all custom styles.', 'gabfire' ),
-                    'section'           => $shortname . 'customizecolors',
-                    'id'                => $shortname . 'customcolors',
-                    'default'           => 0,
-                    'option'            => 'checkbox',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );	
-					
-$options[] = array( 'title'             => __('4 vertical column below gallery', 'gabfire'),
-                    'description'       => __('Select a color for col #1', 'gabfire'),
-                    'section'           => $shortname . 'customizecolors',
-                    'id'                => $shortname . 'subnew1color',
-                    'default'           => '#bd2242',
-                    'option'            => 'color',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );
+--------------------------------------------------------------------------------------------------- */
 
-$options[] = array( 'title'             => '',
-                    'description'       => __('Select a color for col #2', 'gabfire'),
-                    'section'           => $shortname . 'customizecolors',
-                    'id'                => $shortname . 'subnew2color',
-                    'default'           => '#68b3d2',
-                    'option'            => 'color',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );	
-
-$options[] = array( 'title'             => '',
-                    'description'       => __('Select a color for col #3', 'gabfire'),
-                    'section'           => $shortname . 'customizecolors',
-                    'id'                => $shortname . 'subnew3color',
-                    'default'           => '#e87c58',
-                    'option'            => 'color',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );	
-					
-$options[] = array( 'title'             => '',
-                    'description'       => __('Select a color for col #4', 'gabfire'),
-                    'section'           => $shortname . 'customizecolors',
-                    'id'                => $shortname . 'subnew4color',
-                    'default'           => '#d8c238',
-                    'option'            => 'color',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );	
-
+/*
 $options[] = array( 'title'             => __( 'Typography', 'gabfire' ),
                     'description'       => __( 'Change body font style of sitebody.', 'gabfire' ),
                     'section'           => $shortname . 'customizecolors',
@@ -1150,8 +596,8 @@ $options[] = array( 'title'             => __( 'Typography', 'gabfire' ),
                     'option'            => 'checkbox',
                     'sanitize_callback' => '',
                     'type'              => 'control' );
-					
-$options[] = array( 'title'             => __( 'Body Font', 'gabfire' ), // Control label
+
+$options[] = array( 'title'             => '', // Control label
                     'description'       => __( 'Font size (px)', 'gabfire' ),
                     'section'           => $shortname . 'customizecolors', // Add it under the section
                     'id'                => $shortname . 'bodyfontsize', // unique ID
@@ -1160,7 +606,7 @@ $options[] = array( 'title'             => __( 'Body Font', 'gabfire' ), // Cont
                     'sanitize_callback' => '',
                     'choices'           => $options_to_30,
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __( 'Font Family', 'gabfire' ),
                     'section'           => $shortname . 'customizecolors',
@@ -1170,7 +616,7 @@ $options[] = array( 'title'             => '',
                     'sanitize_callback' => '',
                     'choices'           => $fonts,
                     'type'              => 'control' );
-					
+
 $options[] = array( 'title'             => '',
                     'description'       => __('Font Color', 'gabfire'),
                     'section'           => $shortname . 'customizecolors',
@@ -1179,25 +625,17 @@ $options[] = array( 'title'             => '',
                     'option'            => 'color',
                     'sanitize_callback' => '',
                     'type'              => 'control' );
-					
-$options[] = array( 'title'             => __( 'Primary Color', 'gabfire' ),
-                    'description'       => __( 'Change the primary color of site', 'gabfire' ),
-                    'section'           => $shortname . 'customizecolors',
-                    'id'                => $shortname . 'change_colors',
-                    'default'           => 0,
-                    'option'            => 'checkbox',
-                    'sanitize_callback' => '',
-                    'type'              => 'control' );					
-					
+*/
+
 $options[] = array( 'title'             => '',
                     'description'       => __('Change the pinkish red with another color', 'gabfire'),
                     'section'           => $shortname . 'customizecolors',
                     'id'                => $shortname . 'light_red',
-                    'default'           => '#ec4017',
+                    'default'           => '#ea3546',
                     'option'            => 'color',
                     'sanitize_callback' => '',
-                    'type'              => 'control' );					
-					
+                    'type'              => 'control' );
+
 // Do not edit or delete below. This will include any child theme options.
 if ( file_exists( get_stylesheet_directory() .'/customizer.php' ) ) {
     include get_stylesheet_directory() . '/customizer.php';
